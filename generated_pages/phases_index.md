@@ -7,23 +7,18 @@
 <th>summary</th>
 </tr>
 <tr>
-<td><a href="phases/P01.md">P01</a></td>
-<td>Plan</td>
-<td>Envision the desired outcome. Lay out effective ways of achieving it. Communicate the vision, intent, and decisions, focusing on expected results.</td>
+<td><a href="phases/P05.md">P05</a></td>
+<td>Assets</td>
+<td></td>
 </tr>
 <tr>
-<td><a href="phases/P02.md">P02</a></td>
-<td>Prepare</td>
-<td>Activities conducted before execution to improve the ability to conduct the action. Examples include: development of the ecosystem needed to support the action: people, network, channels, content etc.</td>
+<td><a href="phases/P06.md">P06</a></td>
+<td>Actions</td>
+<td></td>
 </tr>
 <tr>
-<td><a href="phases/P03.md">P03</a></td>
-<td>Execute</td>
-<td>Run the action, from initial exposure to wrap-up and/or maintaining presence etc.</td>
-</tr>
-<tr>
-<td><a href="phases/P04.md">P04</a></td>
-<td>Assess</td>
-<td>Evaluate effectiveness of action, for use in future plans</td>
+<td><a href="phases/P07.md">P07</a></td>
+<td>Content</td>
+<td>This category contains Techniques and Sub-Techniques which can be used to describe content published online.</td>
 </tr>
 </table>

@@ -94,12 +94,12 @@ class Disarm:
         xlsx = pd.ExcelFile(frameworkfile)
         for sheetname in xlsx.sheet_names:
             metadata[sheetname] = xlsx.parse(sheetname)
-            metadata[sheetname].replace(np.NaN, '', inplace=True)
+            metadata[sheetname].replace(np.nan, '', inplace=True)
 
         xlsx = pd.ExcelFile(datafile)
         for sheetname in xlsx.sheet_names:
             metadata[sheetname] = xlsx.parse(sheetname)
-            metadata[sheetname].replace(np.NaN, '', inplace=True)
+            metadata[sheetname].replace(np.nan, '', inplace=True)
 
         # Create individual tables and dictionaries
         self.df_phases = metadata['phases']
@@ -113,10 +113,22 @@ class Disarm:
         self.df_tools = metadata['tools']
         self.df_examples = metadata['examples']
         self.df_counters = metadata['countermeasures'].sort_values('disarm_id')
-        self.df_counters[['tactic_id', 'tactic_name']] = self.df_counters['tactic'].str.split(' ', n=1, expand=True)
-        self.df_counters[['metatechnique_id', 'metatechnique_name']] = self.df_counters['metatechnique'].str.split(' ', n=1, expand=True)
+        if not self.df_counters.empty:
+            self.df_counters[['tactic_id', 'tactic_name']] = self.df_counters['tactic'].str.split(' ', n=1, expand=True)
+            self.df_counters[['metatechnique_id', 'metatechnique_name']] = self.df_counters['metatechnique'].str.split(' ', n=1, expand=True)
+        else:
+            # Handle empty counters DataFrame by adding the expected columns
+            self.df_counters['tactic_id'] = ''
+            self.df_counters['tactic_name'] = ''
+            self.df_counters['metatechnique_id'] = ''
+            self.df_counters['metatechnique_name'] = ''
         self.df_detections = metadata['detections']
-        self.df_detections[['tactic_id', 'tactic_name']] = self.df_detections['tactic'].str.split(' ', n=1, expand=True)
+        if not self.df_detections.empty:
+            self.df_detections[['tactic_id', 'tactic_name']] = self.df_detections['tactic'].str.split(' ', n=1, expand=True)
+        else:
+            # Handle empty detections DataFrame by adding the expected columns
+            self.df_detections['tactic_id'] = ''
+            self.df_detections['tactic_name'] = ''
 #        self.df_detections[['metatechnique_id', 'metatechnique_name']] = self.df_detections['metatechnique'].str.split(' ', n=1, expand=True) #FIXIT
         self.df_actortypes = metadata['actortypes']
         self.df_resources = metadata['resources']
@@ -201,13 +213,35 @@ class Disarm:
 
         # Thanks https://stackoverflow.com/questions/17116814/pandas-how-do-i-split-text-in-a-column-into-multiple-rows?noredirect=1
         '''
+        # Handle empty DataFrame or missing column
+        if df.empty or col not in df.columns:
+            # Return empty DataFrame with expected structure
+            empty_df = pd.DataFrame(columns=list(df.columns) + [newcol+'_id'])
+            if col in df.columns:
+                empty_df = empty_df.drop(col, axis=1, errors='ignore')
+            return empty_df
+        
+        # Check if column has any non-null, non-empty values
+        if df[col].isna().all() or (df[col] == '').all():
+            # Return empty DataFrame with expected structure
+            empty_df = pd.DataFrame(columns=list(df.columns) + [newcol+'_id'])
+            empty_df = empty_df.drop(col, axis=1, errors='ignore')
+            return empty_df
+        
         crosstable = df.join(df[col]
                         .str.split(divider, expand=True).stack()
                         .reset_index(drop=True,level=1)
                         .rename(newcol)).drop(col, axis=1)
         crosstable = crosstable[crosstable[newcol].notnull()]
-        crosstable[newcol+'_id'] = crosstable[newcol].str.split(' ').str[0]
-        crosstable.drop(newcol, axis=1, inplace=True)
+        
+        # Only proceed if we have data to process
+        if not crosstable.empty:
+            crosstable[newcol+'_id'] = crosstable[newcol].str.split(' ').str[0]
+            crosstable.drop(newcol, axis=1, inplace=True)
+        else:
+            # Add the expected column even if empty
+            crosstable[newcol+'_id'] = ''
+        
         return crosstable
 
     
@@ -438,7 +472,7 @@ class Disarm:
         html += '</table>\n'
 
         # Write file
-        with open(outfile, 'w') as f:
+        with open(outfile, 'w', encoding='utf-8') as f:
             f.write(html)
             print('updated {}'.format(outfile))
         return
@@ -505,7 +539,7 @@ class Disarm:
                                             GENERATED_PAGES_DIR + '{}_index.md'.format(objecttypeplural))
 
             # Update or create file for every object with this objecttype type
-            template = open('page_templates/template_{}.md'.format(objecttype)).read()
+            template = open('page_templates/template_{}.md'.format(objecttype), 'r', encoding='utf-8').read()
             for index, row in df[df['name'].notnull()].iterrows():
 
                 # First read in the file - if it exists - and grab everything 
@@ -514,7 +548,7 @@ class Disarm:
                 datafile = GENERATED_PAGES_DIR + '{}/{}.md'.format(objecttypeplural, row['disarm_id'])
                 oldmetatext = ''
                 if os.path.exists(datafile):
-                    with open(datafile) as f:
+                    with open(datafile, 'r', encoding='utf-8') as f:
                         filetext = f.read()
                     warnpos = filetext.find(warntext)
                     if warnpos == -1:
@@ -587,7 +621,7 @@ class Disarm:
                 # Make sure the user data goes in
                 if (metatext + warntext) != oldmetatext:
                     print('Updating {}'.format(datafile))
-                    with open(datafile, 'w') as f:
+                    with open(datafile, 'w', encoding='utf-8') as f:
                         f.write(metatext)
                         f.write(warntext)
                         f.write(usertext)
@@ -667,7 +701,7 @@ class Disarm:
             html += '</tr>\n<tr>\n'
         html += '</tr>\n</table>\n'
 
-        with open(outfile, 'w') as f:
+        with open(outfile, 'w', encoding='utf-8') as f:
             f.write(html)
             print('updated {}'.format(outfile))
 
@@ -739,7 +773,7 @@ function handleTechniqueClick(box) {{
 </html>
 '''
 
-        with open(outfile, 'w') as f:
+        with open(outfile, 'w', encoding='utf-8') as f:
             f.write(html)
             print('updated {}'.format(outfile))
         return
@@ -806,7 +840,7 @@ function handleTechniqueClick(box) {{
                 html += '<td>{}</td>\n'.format(val)
         html += '</tr>\n</table>\n'           
 
-        with open(outfile, 'w') as f:
+        with open(outfile, 'w', encoding='utf-8') as f:
             f.write(html)
             print('updated {}'.format(outfile))
 
