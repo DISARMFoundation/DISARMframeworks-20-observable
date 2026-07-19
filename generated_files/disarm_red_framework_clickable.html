@@ -24,685 +24,800 @@ function handleTechniqueClick(box) {
 
 <table border=1 bgcolor=silver>
 <tr bgcolor=fuchsia>
-<td>P05 Assets</td>
-<td>P05 Assets</td>
-<td>P05 Assets</td>
-<td>P06 Actions</td>
-<td>P06 Actions</td>
-<td>P06 Actions</td>
-<td>P06 Actions</td>
-<td>P06 Actions</td>
-<td>P06 Actions</td>
-<td>P07 Materials</td>
+<td>P05 Participant</td>
+<td>P05 Participant</td>
+<td>P05 Participant</td>
+<td>P05 Participant</td>
+<td>P06 Action</td>
+<td>P06 Action</td>
+<td>P06 Action</td>
+<td>P06 Action</td>
+<td>P07 Material</td>
+<td>P07 Material</td>
+<td>P07 Material</td>
+<td>P07 Material</td>
+<td>P07 Material</td>
+<td>P07 Material</td>
+<td>P07 Material</td>
 </tr>
 <tr bgcolor=aqua>
 <td>TA21 Observed Asset</td>
-<td>TA22 Observed Asset Descriptors</td>
-<td>TA23 Asset Identity Descriptors</td>
+<td>TA22 Observed Asset Descriptor</td>
+<td>TA23 Identity Descriptor</td>
+<td>TA24 Offline Participant</td>
 <td>TA41 Interact with Publication, Asset, or Content</td>
-<td>TA42 Actions Available to Platforms</td>
-<td>TA43 Offline Actions</td>
+<td>TA42 Action Available to Platforms</td>
+<td>TA43 Offline Action</td>
+<td>TA44 Action Detail</td>
 <td>TA61 Publication Details</td>
 <td>TA62 Content Origin</td>
-<td>TA63 Narrative Details</td>
+<td>TA63 Narrative Detail</td>
 <td>TA64 Content Effect</td>
+<td>TA65 Content Detail</td>
+<td>TA66 Narrative Theme</td>
+<td>TA67 Offline Material</td>
 </tr>
 <tr>
 <td id="T2001">T2001 User Asset<input type="checkbox" id="T2001check"  onclick="handleTechniqueClick('T2001')"></td>
 <td id="T2021">T2021 Asset Configuration<input type="checkbox" id="T2021check"  onclick="handleTechniqueClick('T2021')"></td>
-<td id="T2041">T2041 Asset Presented Identity<input type="checkbox" id="T2041check"  onclick="handleTechniqueClick('T2041')"></td>
+<td id="T2041">T2041 Presented Identity<input type="checkbox" id="T2041check"  onclick="handleTechniqueClick('T2041')"></td>
+<td id="T2061">T2061 Individual<input type="checkbox" id="T2061check"  onclick="handleTechniqueClick('T2061')"></td>
 <td id="T2201">T2201 Publish Online Publication<input type="checkbox" id="T2201check"  onclick="handleTechniqueClick('T2201')"></td>
 <td id="T2221">T2221 Platform Curation Actions<input type="checkbox" id="T2221check"  onclick="handleTechniqueClick('T2221')"></td>
-<td id="T3001">T3001 Offline Harm<input type="checkbox" id="T3001check"  onclick="handleTechniqueClick('T3001')"></td>
+<td id="T3001">T3001 Physical Harm<input type="checkbox" id="T3001check"  onclick="handleTechniqueClick('T3001')"></td>
+<td id="T3800">T3800 Repeated Action<input type="checkbox" id="T3800check"  onclick="handleTechniqueClick('T3800')"></td>
 <td id="T4001">T4001 Publication Type<input type="checkbox" id="T4001check"  onclick="handleTechniqueClick('T4001')"></td>
 <td id="T4201">T4201 AI-Generated Content<input type="checkbox" id="T4201check"  onclick="handleTechniqueClick('T4201')"></td>
-<td id="T4401">T4401 Content Verifiability<input type="checkbox" id="T4401check"  onclick="handleTechniqueClick('T4401')"></td>
-<td id="T4603">T4603 Content Action<input type="checkbox" id="T4603check"  onclick="handleTechniqueClick('T4603')"></td>
+<td id="T4006">T4006 Demonstrably False Content<input type="checkbox" id="T4006check"  onclick="handleTechniqueClick('T4006')"></td>
+<td id="T4602">T4602 Content Contains Link<input type="checkbox" id="T4602check"  onclick="handleTechniqueClick('T4602')"></td>
+<td id="T4002">T4002 Content Format<input type="checkbox" id="T4002check"  onclick="handleTechniqueClick('T4002')"></td>
+<td id="T6001">T6001 Narrative Related to Subject<input type="checkbox" id="T6001check"  onclick="handleTechniqueClick('T6001')"></td>
+<td id="T4801">T4801 In-Person Interaction<input type="checkbox" id="T4801check"  onclick="handleTechniqueClick('T4801')"></td>
 </tr>
 <tr>
 <td id="T2001.001">T2001.001 Account Asset<input type="checkbox" id="T2001.001check"  onclick="handleTechniqueClick('T2001.001')"></td>
 <td id="T2021.001">T2021.001 Verified Asset<input type="checkbox" id="T2021.001check"  onclick="handleTechniqueClick('T2021.001')"></td>
-<td id="T2041.001">T2041.001 Asset Presents Anonymous Identity<input type="checkbox" id="T2041.001check"  onclick="handleTechniqueClick('T2041.001')"></td>
+<td id="T2041.001">T2041.001 Anonymous Identity<input type="checkbox" id="T2041.001check"  onclick="handleTechniqueClick('T2041.001')"></td>
+<td id="T2061.001">T2061.001 Multiple Individuals<input type="checkbox" id="T2061.001check"  onclick="handleTechniqueClick('T2061.001')"></td>
 <td id="T2201.001">T2201.001 Publish<input type="checkbox" id="T2201.001check"  onclick="handleTechniqueClick('T2201.001')"></td>
 <td id="T2221.001">T2221.001 Host<input type="checkbox" id="T2221.001check"  onclick="handleTechniqueClick('T2221.001')"></td>
-<td id="T3001.001">T3001.001 Physical Violence<input type="checkbox" id="T3001.001check"  onclick="handleTechniqueClick('T3001.001')"></td>
+<td id="T3001.001">T3001.001 Conduct Physical Violence<input type="checkbox" id="T3001.001check"  onclick="handleTechniqueClick('T3001.001')"></td>
+<td id="T3801">T3801 Lack of Action<input type="checkbox" id="T3801check"  onclick="handleTechniqueClick('T3801')"></td>
 <td id="T4001.001">T4001.001 Post<input type="checkbox" id="T4001.001check"  onclick="handleTechniqueClick('T4001.001')"></td>
 <td id="T4201.001">T4201.001 Deepfake Impersonation<input type="checkbox" id="T4201.001check"  onclick="handleTechniqueClick('T4201.001')"></td>
-<td id="T4401.001">T4401.001 Information is Verified<input type="checkbox" id="T4401.001check"  onclick="handleTechniqueClick('T4401.001')"></td>
-<td id="T4603.001">T4603.001 Content Threatens Action<input type="checkbox" id="T4603.001check"  onclick="handleTechniqueClick('T4603.001')"></td>
+<td id="T4006.001">T4006.001 Statement Incorrectly Presented as Made by Individual or Institution<input type="checkbox" id="T4006.001check"  onclick="handleTechniqueClick('T4006.001')"></td>
+<td id="T4602.001">T4602.001 Content Contains Disguised Link<input type="checkbox" id="T4602.001check"  onclick="handleTechniqueClick('T4602.001')"></td>
+<td id="T4002.001">T4002.001 Text Content<input type="checkbox" id="T4002.001check"  onclick="handleTechniqueClick('T4002.001')"></td>
+<td id="T6001.001">T6001.001 Narrative Frames Subject as Aligned with Outgroup<input type="checkbox" id="T6001.001check"  onclick="handleTechniqueClick('T6001.001')"></td>
+<td id="T4801.001">T4801.001 Discussion<input type="checkbox" id="T4801.001check"  onclick="handleTechniqueClick('T4801.001')"></td>
 </tr>
 <tr>
 <td id="T2001.002">T2001.002 Admin Account Asset<input type="checkbox" id="T2001.002check"  onclick="handleTechniqueClick('T2001.002')"></td>
 <td id="T2021.002">T2021.002 Lookalike Asset ID<input type="checkbox" id="T2021.002check"  onclick="handleTechniqueClick('T2021.002')"></td>
-<td id="T2041.002">T2041.002 Asset Presents Legitimate Identity of Asset Operator<input type="checkbox" id="T2041.002check"  onclick="handleTechniqueClick('T2041.002')"></td>
+<td id="T2041.002">T2041.002 Legitimate Identity<input type="checkbox" id="T2041.002check"  onclick="handleTechniqueClick('T2041.002')"></td>
+<td id="T2062">T2062 Institution<input type="checkbox" id="T2062check"  onclick="handleTechniqueClick('T2062')"></td>
 <td id="T2201.002">T2201.002 Send<input type="checkbox" id="T2201.002check"  onclick="handleTechniqueClick('T2201.002')"></td>
 <td id="T2221.002">T2221.002 Promote<input type="checkbox" id="T2221.002check"  onclick="handleTechniqueClick('T2221.002')"></td>
-<td id="T3001.002">T3001.002 Physical Sexual Violence<input type="checkbox" id="T3001.002check"  onclick="handleTechniqueClick('T3001.002')"></td>
+<td id="T3001.002">T3001.002 Conduct Physical Sexual Violence<input type="checkbox" id="T3001.002check"  onclick="handleTechniqueClick('T3001.002')"></td>
+<td id="T3801.001">T3801.001 Cease Ongoing Action<input type="checkbox" id="T3801.001check"  onclick="handleTechniqueClick('T3801.001')"></td>
 <td id="T4001.002">T4001.002 Message<input type="checkbox" id="T4001.002check"  onclick="handleTechniqueClick('T4001.002')"></td>
 <td id="T4201.002">T4201.002 Sexual Deepfake Impersonation<input type="checkbox" id="T4201.002check"  onclick="handleTechniqueClick('T4201.002')"></td>
-<td id="T4401.002">T4401.002 Information is False<input type="checkbox" id="T4401.002check"  onclick="handleTechniqueClick('T4401.002')"></td>
-<td id="T4603.002">T4603.002 Content Encourages Action<input type="checkbox" id="T4603.002check"  onclick="handleTechniqueClick('T4603.002')"></td>
+<td id="T4006.002">T4006.002 Falsified Depiction of Content Amplification<input type="checkbox" id="T4006.002check"  onclick="handleTechniqueClick('T4006.002')"></td>
+<td id="T4602.002">T4602.002 Content Contains Shortened Link<input type="checkbox" id="T4602.002check"  onclick="handleTechniqueClick('T4602.002')"></td>
+<td id="T4002.002">T4002.002 Templated Text<input type="checkbox" id="T4002.002check"  onclick="handleTechniqueClick('T4002.002')"></td>
+<td id="T6001.002">T6001.002 Narrative Frames Subject as taking Taboo Action<input type="checkbox" id="T6001.002check"  onclick="handleTechniqueClick('T6001.002')"></td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2001.003">T2001.003 Unauthenticated Account Asset<input type="checkbox" id="T2001.003check"  onclick="handleTechniqueClick('T2001.003')"></td>
 <td id="T2021.003">T2021.003 Lookalike Domain<input type="checkbox" id="T2021.003check"  onclick="handleTechniqueClick('T2021.003')"></td>
-<td id="T2041.003">T2041.003 Asset Presents Nonexistent Identity<input type="checkbox" id="T2041.003check"  onclick="handleTechniqueClick('T2041.003')"></td>
+<td id="T2041.003">T2041.003 Nonexistent Identity<input type="checkbox" id="T2041.003check"  onclick="handleTechniqueClick('T2041.003')"></td>
+<td id="T2062.001">T2062.001 Multiple Institutions<input type="checkbox" id="T2062.001check"  onclick="handleTechniqueClick('T2062.001')"></td>
 <td id="T2201.003">T2201.003 Conduct<input type="checkbox" id="T2201.003check"  onclick="handleTechniqueClick('T2201.003')"></td>
 <td id="T2221.003">T2221.003 Deliver<input type="checkbox" id="T2221.003check"  onclick="handleTechniqueClick('T2221.003')"></td>
-<td bgcolor=white> </td>
+<td id="T3001.003">T3001.003 Attempt Suicide<input type="checkbox" id="T3001.003check"  onclick="handleTechniqueClick('T3001.003')"></td>
+<td id="T3801.002">T3801.002 Not Taking Action<input type="checkbox" id="T3801.002check"  onclick="handleTechniqueClick('T3801.002')"></td>
 <td id="T4001.003">T4001.003 Email<input type="checkbox" id="T4001.003check"  onclick="handleTechniqueClick('T4001.003')"></td>
 <td id="T4201.003">T4201.003 AI-Nudified Imagery<input type="checkbox" id="T4201.003check"  onclick="handleTechniqueClick('T4201.003')"></td>
-<td id="T4401.003">T4401.003 Information is Unverifiable<input type="checkbox" id="T4401.003check"  onclick="handleTechniqueClick('T4401.003')"></td>
-<td id="T4603.003">T4603.003 Content Contains Instructions for Action<input type="checkbox" id="T4603.003check"  onclick="handleTechniqueClick('T4603.003')"></td>
+<td id="T4006.003">T4006.003 Falsified Graffiti or Signage<input type="checkbox" id="T4006.003check"  onclick="handleTechniqueClick('T4006.003')"></td>
+<td id="T4602.003">T4602.003 Content Contains QR Code Link<input type="checkbox" id="T4602.003check"  onclick="handleTechniqueClick('T4602.003')"></td>
+<td id="T4002.003">T4002.003 Image Content<input type="checkbox" id="T4002.003check"  onclick="handleTechniqueClick('T4002.003')"></td>
+<td id="T6001.003">T6001.003 Narrative Frames Subject as Irrational on Given Issue<input type="checkbox" id="T6001.003check"  onclick="handleTechniqueClick('T6001.003')"></td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2002">T2002 Community Asset<input type="checkbox" id="T2002check"  onclick="handleTechniqueClick('T2002')"></td>
 <td id="T2022">T2022 Asset Description<input type="checkbox" id="T2022check"  onclick="handleTechniqueClick('T2022')"></td>
-<td id="T2041.004">T2041.004 Asset Presents Impersonation of Another Identity<input type="checkbox" id="T2041.004check"  onclick="handleTechniqueClick('T2041.004')"></td>
+<td id="T2041.004">T2041.004 Impersonation of Another Identity<input type="checkbox" id="T2041.004check"  onclick="handleTechniqueClick('T2041.004')"></td>
+<td bgcolor=white> </td>
 <td id="T2201.004">T2201.004 Upload<input type="checkbox" id="T2201.004check"  onclick="handleTechniqueClick('T2201.004')"></td>
 <td id="T2222">T2222 Platform Prompting Action<input type="checkbox" id="T2222check"  onclick="handleTechniqueClick('T2222')"></td>
-<td bgcolor=white> </td>
+<td id="T3002">T3002 Physically Interact<input type="checkbox" id="T3002check"  onclick="handleTechniqueClick('T3002')"></td>
+<td id="T3802">T3802 Action Legality<input type="checkbox" id="T3802check"  onclick="handleTechniqueClick('T3802')"></td>
 <td id="T4001.004">T4001.004 Call<input type="checkbox" id="T4001.004check"  onclick="handleTechniqueClick('T4001.004')"></td>
 <td id="T4202">T4202 Private Materials<input type="checkbox" id="T4202check"  onclick="handleTechniqueClick('T4202')"></td>
-<td id="T4401.004">T4401.004 Information is Misleading<input type="checkbox" id="T4401.004check"  onclick="handleTechniqueClick('T4401.004')"></td>
-<td id="T4603.004">T4603.004 Content Solicits Action<input type="checkbox" id="T4603.004check"  onclick="handleTechniqueClick('T4603.004')"></td>
+<td id="T4006.004">T4006.004 Imagery Depicting Individual Edited to Introduce Sexual Material<input type="checkbox" id="T4006.004check"  onclick="handleTechniqueClick('T4006.004')"></td>
+<td id="T4602.004">T4602.004 Content Contains Embedded Link<input type="checkbox" id="T4602.004check"  onclick="handleTechniqueClick('T4602.004')"></td>
+<td id="T4002.004">T4002.004 Evidence Collage<input type="checkbox" id="T4002.004check"  onclick="handleTechniqueClick('T4002.004')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2002.001">T2002.001 Online Community Group<input type="checkbox" id="T2002.001check"  onclick="handleTechniqueClick('T2002.001')"></td>
 <td id="T2023">T2023 Asset Imagery<input type="checkbox" id="T2023check"  onclick="handleTechniqueClick('T2023')"></td>
-<td id="T2041.005">T2041.005 Asset Presents Parody of Another Identity<input type="checkbox" id="T2041.005check"  onclick="handleTechniqueClick('T2041.005')"></td>
+<td id="T2041.005">T2041.005 Parody of Another Identity<input type="checkbox" id="T2041.005check"  onclick="handleTechniqueClick('T2041.005')"></td>
+<td bgcolor=white> </td>
 <td id="T2201.005">T2201.005 Comment<input type="checkbox" id="T2201.005check"  onclick="handleTechniqueClick('T2201.005')"></td>
 <td id="T2222.001">T2222.001 Suggest Action<input type="checkbox" id="T2222.001check"  onclick="handleTechniqueClick('T2222.001')"></td>
-<td bgcolor=white> </td>
+<td id="T3002.001">T3002.001 Physically Detain<input type="checkbox" id="T3002.001check"  onclick="handleTechniqueClick('T3002.001')"></td>
+<td id="T3802.001">T3802.001 Action Illegal in Actor's Jurisdiction<input type="checkbox" id="T3802.001check"  onclick="handleTechniqueClick('T3802.001')"></td>
 <td id="T4001.005">T4001.005 Stream<input type="checkbox" id="T4001.005check"  onclick="handleTechniqueClick('T4001.005')"></td>
 <td id="T4202.001">T4202.001 Personally Identifiable Information<input type="checkbox" id="T4202.001check"  onclick="handleTechniqueClick('T4202.001')"></td>
-<td id="T4401.005">T4401.005 Content Produced as Satire<input type="checkbox" id="T4401.005check"  onclick="handleTechniqueClick('T4401.005')"></td>
-<td id="T4603.005">T4603.005 Content Depicts Offline Harm<input type="checkbox" id="T4603.005check"  onclick="handleTechniqueClick('T4603.005')"></td>
+<td id="T4006.005">T4006.005 Claim to Nonexistent Physical Address<input type="checkbox" id="T4006.005check"  onclick="handleTechniqueClick('T4006.005')"></td>
+<td id="T4603">T4603 Content Action<input type="checkbox" id="T4603check"  onclick="handleTechniqueClick('T4603')"></td>
+<td id="T4002.005">T4002.005 Text Presented in Image Format<input type="checkbox" id="T4002.005check"  onclick="handleTechniqueClick('T4002.005')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2002.002">T2002.002 Online Community Page<input type="checkbox" id="T2002.002check"  onclick="handleTechniqueClick('T2002.002')"></td>
 <td id="T2023.001">T2023.001 Copied Asset Imagery<input type="checkbox" id="T2023.001check"  onclick="handleTechniqueClick('T2023.001')"></td>
-<td id="T2041.006">T2041.006 Asset's Previous Identity Maintained after Acquisition<input type="checkbox" id="T2041.006check"  onclick="handleTechniqueClick('T2041.006')"></td>
+<td id="T2041.006">T2041.006 Asset's Existing Identity Maintained after Change of Operator<input type="checkbox" id="T2041.006check"  onclick="handleTechniqueClick('T2041.006')"></td>
+<td bgcolor=white> </td>
 <td id="T2201.006">T2201.006 Submit<input type="checkbox" id="T2201.006check"  onclick="handleTechniqueClick('T2201.006')"></td>
 <td id="T2222.002">T2222.002 Enable Action<input type="checkbox" id="T2222.002check"  onclick="handleTechniqueClick('T2222.002')"></td>
-<td bgcolor=white> </td>
+<td id="T3002.002">T3002.002 Physically Surveil<input type="checkbox" id="T3002.002check"  onclick="handleTechniqueClick('T3002.002')"></td>
+<td id="T3802.002">T3802.002 Action Illegal in Technical Infrastructure's Jurisdiction<input type="checkbox" id="T3802.002check"  onclick="handleTechniqueClick('T3802.002')"></td>
 <td id="T4001.006">T4001.006 File<input type="checkbox" id="T4001.006check"  onclick="handleTechniqueClick('T4001.006')"></td>
 <td id="T4202.002">T4202.002 Private Intimate Imagery<input type="checkbox" id="T4202.002check"  onclick="handleTechniqueClick('T4202.002')"></td>
-<td id="T4401.006">T4401.006 Content Previously Fact Checked<input type="checkbox" id="T4401.006check"  onclick="handleTechniqueClick('T4401.006')"></td>
-<td id="T4604">T4604 Harmful Content<input type="checkbox" id="T4604check"  onclick="handleTechniqueClick('T4604')"></td>
+<td id="T4006.006">T4006.006 Incorrect Claim to Real Physical Address<input type="checkbox" id="T4006.006check"  onclick="handleTechniqueClick('T4006.006')"></td>
+<td id="T4603.001">T4603.001 Content Threatens Action<input type="checkbox" id="T4603.001check"  onclick="handleTechniqueClick('T4603.001')"></td>
+<td id="T4002.006">T4002.006 Video Content<input type="checkbox" id="T4002.006check"  onclick="handleTechniqueClick('T4002.006')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2002.003">T2002.003 Chat Community Server<input type="checkbox" id="T2002.003check"  onclick="handleTechniqueClick('T2002.003')"></td>
 <td id="T2023.002">T2023.002 Mimicked Asset Imagery<input type="checkbox" id="T2023.002check"  onclick="handleTechniqueClick('T2023.002')"></td>
 <td id="T2041.007">T2041.007 Asset Presents New Identity<input type="checkbox" id="T2041.007check"  onclick="handleTechniqueClick('T2041.007')"></td>
+<td bgcolor=white> </td>
 <td id="T2202">T2202 Amplify Online Publication<input type="checkbox" id="T2202check"  onclick="handleTechniqueClick('T2202')"></td>
 <td id="T2223">T2223 Platform Takes Moderation Action<input type="checkbox" id="T2223check"  onclick="handleTechniqueClick('T2223')"></td>
-<td bgcolor=white> </td>
+<td id="T3002.003">T3002.003 Physically Abduct<input type="checkbox" id="T3002.003check"  onclick="handleTechniqueClick('T3002.003')"></td>
+<td id="T3802.003">T3802.003 Action Illegal in Subject's Jurisdiction<input type="checkbox" id="T3802.003check"  onclick="handleTechniqueClick('T3802.003')"></td>
 <td id="T4001.007">T4001.007 Report of Infraction<input type="checkbox" id="T4001.007check"  onclick="handleTechniqueClick('T4001.007')"></td>
 <td id="T4202.003">T4202.003 Internal Communications<input type="checkbox" id="T4202.003check"  onclick="handleTechniqueClick('T4202.003')"></td>
-<td id="T4401.007">T4401.007 Claim Previously Fact Checked<input type="checkbox" id="T4401.007check"  onclick="handleTechniqueClick('T4401.007')"></td>
-<td id="T4604.001">T4604.001 Content Constitutes Unsolicited Sexual Imagery<input type="checkbox" id="T4604.001check"  onclick="handleTechniqueClick('T4604.001')"></td>
+<td id="T4006.007">T4006.007 Mislabeled Publication<input type="checkbox" id="T4006.007check"  onclick="handleTechniqueClick('T4006.007')"></td>
+<td id="T4603.002">T4603.002 Content Encourages Action<input type="checkbox" id="T4603.002check"  onclick="handleTechniqueClick('T4603.002')"></td>
+<td id="T4002.007">T4002.007 Vertical Video<input type="checkbox" id="T4002.007check"  onclick="handleTechniqueClick('T4002.007')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2002.004">T2002.004 Chat Room<input type="checkbox" id="T2002.004check"  onclick="handleTechniqueClick('T2002.004')"></td>
 <td id="T2023.003">T2023.003 Animal Profile Picture<input type="checkbox" id="T2023.003check"  onclick="handleTechniqueClick('T2023.003')"></td>
 <td id="T2042">T2042 Individual Role<input type="checkbox" id="T2042check"  onclick="handleTechniqueClick('T2042')"></td>
+<td bgcolor=white> </td>
 <td id="T2202.001">T2202.001 Repost<input type="checkbox" id="T2202.001check"  onclick="handleTechniqueClick('T2202.001')"></td>
 <td id="T2223.001">T2223.001 Platform Suppresses Algorithmic Reach<input type="checkbox" id="T2223.001check"  onclick="handleTechniqueClick('T2223.001')"></td>
+<td id="T3004">T3004 Attend Location<input type="checkbox" id="T3004check"  onclick="handleTechniqueClick('T3004')"></td>
 <td bgcolor=white> </td>
 <td id="T4001.008">T4001.008 Search<input type="checkbox" id="T4001.008check"  onclick="handleTechniqueClick('T4001.008')"></td>
 <td id="T4202.004">T4202.004 Internal Document<input type="checkbox" id="T4202.004check"  onclick="handleTechniqueClick('T4202.004')"></td>
-<td id="T4402">T4402 Reframe Context<input type="checkbox" id="T4402check"  onclick="handleTechniqueClick('T4402')"></td>
-<td id="T4604.002">T4604.002 Content Constitutes Unsolicited Request for Sexual Imagery<input type="checkbox" id="T4604.002check"  onclick="handleTechniqueClick('T4604.002')"></td>
+<td id="T4006.008">T4006.008 Action Incorrectly Presented as Taken by Individual or Institution<input type="checkbox" id="T4006.008check"  onclick="handleTechniqueClick('T4006.008')"></td>
+<td id="T4603.003">T4603.003 Content Contains Instructions for Action<input type="checkbox" id="T4603.003check"  onclick="handleTechniqueClick('T4603.003')"></td>
+<td id="T4002.008">T4002.008 Horizontal Video<input type="checkbox" id="T4002.008check"  onclick="handleTechniqueClick('T4002.008')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2002.005">T2002.005 Chat Broadcast Group<input type="checkbox" id="T2002.005check"  onclick="handleTechniqueClick('T2002.005')"></td>
 <td id="T2023.004">T2023.004 Scenery Profile Picture<input type="checkbox" id="T2023.004check"  onclick="handleTechniqueClick('T2023.004')"></td>
 <td id="T2042.001">T2042.001 Local Individual Role<input type="checkbox" id="T2042.001check"  onclick="handleTechniqueClick('T2042.001')"></td>
+<td bgcolor=white> </td>
 <td id="T2202.002">T2202.002 Emote React<input type="checkbox" id="T2202.002check"  onclick="handleTechniqueClick('T2202.002')"></td>
 <td id="T2223.002">T2223.002 Platform Suppresses Search Results<input type="checkbox" id="T2223.002check"  onclick="handleTechniqueClick('T2223.002')"></td>
+<td id="T3004.001">T3004.001 Visit<input type="checkbox" id="T3004.001check"  onclick="handleTechniqueClick('T3004.001')"></td>
 <td bgcolor=white> </td>
 <td id="T4001.009">T4001.009 Search Results<input type="checkbox" id="T4001.009check"  onclick="handleTechniqueClick('T4001.009')"></td>
 <td id="T4202.005">T4202.005 Internal Contacts List<input type="checkbox" id="T4202.005check"  onclick="handleTechniqueClick('T4202.005')"></td>
-<td id="T4402.001">T4402.001 Incorrect Subtitled Speech Reframes Context<input type="checkbox" id="T4402.001check"  onclick="handleTechniqueClick('T4402.001')"></td>
-<td id="T4604.003">T4604.003 Content Constitutes Voyeuristic Content<input type="checkbox" id="T4604.003check"  onclick="handleTechniqueClick('T4604.003')"></td>
+<td id="T4401">T4401 Content Verifiability<input type="checkbox" id="T4401check"  onclick="handleTechniqueClick('T4401')"></td>
+<td id="T4603.004">T4603.004 Content Solicits Action<input type="checkbox" id="T4603.004check"  onclick="handleTechniqueClick('T4603.004')"></td>
+<td id="T4002.009">T4002.009 Subtitled Speech<input type="checkbox" id="T4002.009check"  onclick="handleTechniqueClick('T4002.009')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2002.006">T2002.006 Community Sub-Forum<input type="checkbox" id="T2002.006check"  onclick="handleTechniqueClick('T2002.006')"></td>
 <td id="T2023.005">T2023.005 Illustrated Character Profile Picture<input type="checkbox" id="T2023.005check"  onclick="handleTechniqueClick('T2023.005')"></td>
 <td id="T2042.002">T2042.002 Journalist Role<input type="checkbox" id="T2042.002check"  onclick="handleTechniqueClick('T2042.002')"></td>
+<td bgcolor=white> </td>
 <td id="T2202.003">T2202.003 Forward<input type="checkbox" id="T2202.003check"  onclick="handleTechniqueClick('T2202.003')"></td>
 <td id="T2223.003">T2223.003 Platform Removes Publication from Platform<input type="checkbox" id="T2223.003check"  onclick="handleTechniqueClick('T2223.003')"></td>
+<td id="T3004.002">T3004.002 Physically Protest<input type="checkbox" id="T3004.002check"  onclick="handleTechniqueClick('T3004.002')"></td>
 <td bgcolor=white> </td>
 <td id="T4001.010">T4001.010 Advertisement<input type="checkbox" id="T4001.010check"  onclick="handleTechniqueClick('T4001.010')"></td>
 <td id="T4202.006">T4202.006 Asset Login Credentials<input type="checkbox" id="T4202.006check"  onclick="handleTechniqueClick('T4202.006')"></td>
-<td id="T4402.002">T4402.002 Edits Made to News Report which Reframe Context<input type="checkbox" id="T4402.002check"  onclick="handleTechniqueClick('T4402.002')"></td>
-<td id="T4604.004">T4604.004 Content Constitutes CSAM<input type="checkbox" id="T4604.004check"  onclick="handleTechniqueClick('T4604.004')"></td>
+<td id="T4401.001">T4401.001 Information is Verified<input type="checkbox" id="T4401.001check"  onclick="handleTechniqueClick('T4401.001')"></td>
+<td id="T4603.005">T4603.005 Content Depicts Physical Harm<input type="checkbox" id="T4603.005check"  onclick="handleTechniqueClick('T4603.005')"></td>
+<td id="T4002.010">T4002.010 Audio Content<input type="checkbox" id="T4002.010check"  onclick="handleTechniqueClick('T4002.010')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2002.007">T2002.007 Online Game Session<input type="checkbox" id="T2002.007check"  onclick="handleTechniqueClick('T2002.007')"></td>
 <td id="T2023.006">T2023.006 Attractive Person Profile Picture<input type="checkbox" id="T2023.006check"  onclick="handleTechniqueClick('T2023.006')"></td>
 <td id="T2042.003">T2042.003 Activist Role<input type="checkbox" id="T2042.003check"  onclick="handleTechniqueClick('T2042.003')"></td>
+<td bgcolor=white> </td>
 <td id="T2203">T2203 Interact with Community or User<input type="checkbox" id="T2203check"  onclick="handleTechniqueClick('T2203')"></td>
 <td id="T2223.004">T2223.004 Platform Applies Disclaimer<input type="checkbox" id="T2223.004check"  onclick="handleTechniqueClick('T2223.004')"></td>
+<td id="T3005">T3005 Financial Action<input type="checkbox" id="T3005check"  onclick="handleTechniqueClick('T3005')"></td>
 <td bgcolor=white> </td>
-<td id="T4002">T4002 Content Format<input type="checkbox" id="T4002check"  onclick="handleTechniqueClick('T4002')"></td>
-<td id="T4203">T4203 Edited Content<input type="checkbox" id="T4203check"  onclick="handleTechniqueClick('T4203')"></td>
-<td id="T4402.003">T4402.003 Historic Content Incorrectly Presented as Current<input type="checkbox" id="T4402.003check"  onclick="handleTechniqueClick('T4402.003')"></td>
-<td id="T4604.005">T4604.005 Content Constitutes Sextortion<input type="checkbox" id="T4604.005check"  onclick="handleTechniqueClick('T4604.005')"></td>
+<td id="T4008">T4008 Use of Tagging Feature<input type="checkbox" id="T4008check"  onclick="handleTechniqueClick('T4008')"></td>
+<td id="T4202.007">T4202.007 Content Constitutes Leak of Private Material<input type="checkbox" id="T4202.007check"  onclick="handleTechniqueClick('T4202.007')"></td>
+<td id="T4401.002">T4401.002 Information is False<input type="checkbox" id="T4401.002check"  onclick="handleTechniqueClick('T4401.002')"></td>
+<td id="T4603.006">T4603.006 Content Solicits Secrecy<input type="checkbox" id="T4603.006check"  onclick="handleTechniqueClick('T4603.006')"></td>
+<td id="T4002.011">T4002.011 Music<input type="checkbox" id="T4002.011check"  onclick="handleTechniqueClick('T4002.011')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003">T2003 Community Hosting Platform<input type="checkbox" id="T2003check"  onclick="handleTechniqueClick('T2003')"></td>
 <td id="T2024">T2024 Platform Capability<input type="checkbox" id="T2024check"  onclick="handleTechniqueClick('T2024')"></td>
 <td id="T2042.004">T2042.004 Hacktivist Role<input type="checkbox" id="T2042.004check"  onclick="handleTechniqueClick('T2042.004')"></td>
+<td bgcolor=white> </td>
 <td id="T2203.001">T2203.001 Request Connection with Asset<input type="checkbox" id="T2203.001check"  onclick="handleTechniqueClick('T2203.001')"></td>
 <td id="T2223.005">T2223.005 Platform Suspends Asset<input type="checkbox" id="T2223.005check"  onclick="handleTechniqueClick('T2223.005')"></td>
+<td id="T3005.001">T3005.001 Fund<input type="checkbox" id="T3005.001check"  onclick="handleTechniqueClick('T3005.001')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.001">T4002.001 Text Content<input type="checkbox" id="T4002.001check"  onclick="handleTechniqueClick('T4002.001')"></td>
-<td id="T4203.001">T4203.001 Clipped Content<input type="checkbox" id="T4203.001check"  onclick="handleTechniqueClick('T4203.001')"></td>
-<td id="T4402.004">T4402.004 Content Incorrectly Presented as Depicting Another Location<input type="checkbox" id="T4402.004check"  onclick="handleTechniqueClick('T4402.004')"></td>
-<td id="T4604.006">T4604.006 Content Constitutes Abusive Content<input type="checkbox" id="T4604.006check"  onclick="handleTechniqueClick('T4604.006')"></td>
+<td id="T4008.001">T4008.001 Geolocation<input type="checkbox" id="T4008.001check"  onclick="handleTechniqueClick('T4008.001')"></td>
+<td id="T4203">T4203 Edited Content<input type="checkbox" id="T4203check"  onclick="handleTechniqueClick('T4203')"></td>
+<td id="T4401.003">T4401.003 Information is Unverifiable<input type="checkbox" id="T4401.003check"  onclick="handleTechniqueClick('T4401.003')"></td>
+<td id="T4603.007">T4603.007 Content Solicits Information<input type="checkbox" id="T4603.007check"  onclick="handleTechniqueClick('T4603.007')"></td>
+<td id="T4003">T4003 Content Style<input type="checkbox" id="T4003check"  onclick="handleTechniqueClick('T4003')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.001">T2003.001 Social Media Platform<input type="checkbox" id="T2003.001check"  onclick="handleTechniqueClick('T2003.001')"></td>
 <td id="T2024.001">T2024.001 Payment Processing Capability<input type="checkbox" id="T2024.001check"  onclick="handleTechniqueClick('T2024.001')"></td>
 <td id="T2042.005">T2042.005 Military Personnel Role<input type="checkbox" id="T2042.005check"  onclick="handleTechniqueClick('T2042.005')"></td>
+<td bgcolor=white> </td>
 <td id="T2203.002">T2203.002 Connect with Asset<input type="checkbox" id="T2203.002check"  onclick="handleTechniqueClick('T2203.002')"></td>
 <td id="T2224">T2224 Platform Failure to Take Action<input type="checkbox" id="T2224check"  onclick="handleTechniqueClick('T2224')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.002">T4002.002 Templated Text<input type="checkbox" id="T4002.002check"  onclick="handleTechniqueClick('T4002.002')"></td>
-<td id="T4203.002">T4203.002 Cropped Content<input type="checkbox" id="T4203.002check"  onclick="handleTechniqueClick('T4203.002')"></td>
-<td id="T4402.005">T4402.005 Video Game Content Incorrectly Presented as Depicting Reality<input type="checkbox" id="T4402.005check"  onclick="handleTechniqueClick('T4402.005')"></td>
-<td id="T4604.007">T4604.007 Content Constitutes Discriminatory Content<input type="checkbox" id="T4604.007check"  onclick="handleTechniqueClick('T4604.007')"></td>
+<td bgcolor=white> </td>
+<td id="T4008.002">T4008.002 Hashtag<input type="checkbox" id="T4008.002check"  onclick="handleTechniqueClick('T4008.002')"></td>
+<td id="T4203.001">T4203.001 Clipped Content<input type="checkbox" id="T4203.001check"  onclick="handleTechniqueClick('T4203.001')"></td>
+<td id="T4401.004">T4401.004 Information is Misleading<input type="checkbox" id="T4401.004check"  onclick="handleTechniqueClick('T4401.004')"></td>
+<td id="T4603.008">T4603.008 Content Describes Activity<input type="checkbox" id="T4603.008check"  onclick="handleTechniqueClick('T4603.008')"></td>
+<td id="T4003.001">T4003.001 News Report<input type="checkbox" id="T4003.001check"  onclick="handleTechniqueClick('T4003.001')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.002">T2003.002 Chat Platform<input type="checkbox" id="T2003.002check"  onclick="handleTechniqueClick('T2003.002')"></td>
 <td id="T2024.002">T2024.002 Subscription Processing Capability<input type="checkbox" id="T2024.002check"  onclick="handleTechniqueClick('T2024.002')"></td>
 <td id="T2042.006">T2042.006 Recruiter Role<input type="checkbox" id="T2042.006check"  onclick="handleTechniqueClick('T2042.006')"></td>
+<td bgcolor=white> </td>
 <td id="T2203.003">T2203.003 Follow Asset<input type="checkbox" id="T2203.003check"  onclick="handleTechniqueClick('T2203.003')"></td>
 <td id="T2224.001">T2224.001 Platform Fails to Address Asset with Repeat Infringements<input type="checkbox" id="T2224.001check"  onclick="handleTechniqueClick('T2224.001')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.003">T4002.003 Image Content<input type="checkbox" id="T4002.003check"  onclick="handleTechniqueClick('T4002.003')"></td>
-<td id="T4203.003">T4203.003 Playback Speed Altered<input type="checkbox" id="T4203.003check"  onclick="handleTechniqueClick('T4203.003')"></td>
-<td id="T4402.006">T4402.006 AI-Generated Content Incorrectly Presented as Depicting Reality<input type="checkbox" id="T4402.006check"  onclick="handleTechniqueClick('T4402.006')"></td>
-<td id="T4604.008">T4604.008 Content Constitutes Intersectional Discriminatory Content<input type="checkbox" id="T4604.008check"  onclick="handleTechniqueClick('T4604.008')"></td>
+<td bgcolor=white> </td>
+<td id="T4009">T4009 Publication Access Settings<input type="checkbox" id="T4009check"  onclick="handleTechniqueClick('T4009')"></td>
+<td id="T4203.002">T4203.002 Cropped Content<input type="checkbox" id="T4203.002check"  onclick="handleTechniqueClick('T4203.002')"></td>
+<td id="T4401.005">T4401.005 Content Produced as Satire<input type="checkbox" id="T4401.005check"  onclick="handleTechniqueClick('T4401.005')"></td>
+<td id="T4603.009">T4603.009 Explicit Content Action<input type="checkbox" id="T4603.009check"  onclick="handleTechniqueClick('T4603.009')"></td>
+<td id="T4003.002">T4003.002 Opinion Piece<input type="checkbox" id="T4003.002check"  onclick="handleTechniqueClick('T4003.002')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.003">T2003.003 Microblogging Platform<input type="checkbox" id="T2003.003check"  onclick="handleTechniqueClick('T2003.003')"></td>
 <td id="T2024.003">T2024.003 Email Service Capability<input type="checkbox" id="T2024.003check"  onclick="handleTechniqueClick('T2024.003')"></td>
 <td id="T2042.007">T2042.007 Researcher Role<input type="checkbox" id="T2042.007check"  onclick="handleTechniqueClick('T2042.007')"></td>
+<td bgcolor=white> </td>
 <td id="T2203.004">T2203.004 Join Community<input type="checkbox" id="T2203.004check"  onclick="handleTechniqueClick('T2203.004')"></td>
 <td id="T2224.002">T2224.002 Platform Fails to Reverse Erroneous Moderation Action<input type="checkbox" id="T2224.002check"  onclick="handleTechniqueClick('T2224.002')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.004">T4002.004 Evidence Collage<input type="checkbox" id="T4002.004check"  onclick="handleTechniqueClick('T4002.004')"></td>
-<td id="T4203.004">T4203.004 Source Removed from Content<input type="checkbox" id="T4203.004check"  onclick="handleTechniqueClick('T4203.004')"></td>
-<td id="T4402.007">T4402.007 Context Reframed by Edits to Media<input type="checkbox" id="T4402.007check"  onclick="handleTechniqueClick('T4402.007')"></td>
-<td id="T4604.009">T4604.009 Content Constitutes Eating Disorder Content<input type="checkbox" id="T4604.009check"  onclick="handleTechniqueClick('T4604.009')"></td>
+<td bgcolor=white> </td>
+<td id="T4009.001">T4009.001 Number of Times Publication can be Viewed Limited per User<input type="checkbox" id="T4009.001check"  onclick="handleTechniqueClick('T4009.001')"></td>
+<td id="T4203.003">T4203.003 Playback Speed Altered<input type="checkbox" id="T4203.003check"  onclick="handleTechniqueClick('T4203.003')"></td>
+<td id="T4401.006">T4401.006 Content Previously Fact Checked<input type="checkbox" id="T4401.006check"  onclick="handleTechniqueClick('T4401.006')"></td>
+<td id="T4603.010">T4603.010 Implicit Content Action<input type="checkbox" id="T4603.010check"  onclick="handleTechniqueClick('T4603.010')"></td>
+<td id="T4003.003">T4003.003 Academic Research Report<input type="checkbox" id="T4003.003check"  onclick="handleTechniqueClick('T4003.003')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.004">T2003.004 Legacy Online Forum Platform<input type="checkbox" id="T2003.004check"  onclick="handleTechniqueClick('T2003.004')"></td>
 <td id="T2024.004">T2024.004 Encrypted Communication Capability<input type="checkbox" id="T2024.004check"  onclick="handleTechniqueClick('T2024.004')"></td>
 <td id="T2042.008">T2042.008 Expert Role<input type="checkbox" id="T2042.008check"  onclick="handleTechniqueClick('T2042.008')"></td>
+<td bgcolor=white> </td>
 <td id="T2203.005">T2203.005 Add Asset to Community<input type="checkbox" id="T2203.005check"  onclick="handleTechniqueClick('T2203.005')"></td>
 <td id="T2224.003">T2224.003 Platform Fails to Act on Report in Timely Manner<input type="checkbox" id="T2224.003check"  onclick="handleTechniqueClick('T2224.003')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.005">T4002.005 Text Presented in Image Format<input type="checkbox" id="T4002.005check"  onclick="handleTechniqueClick('T4002.005')"></td>
-<td id="T4203.005">T4203.005 AI-Edited Content<input type="checkbox" id="T4203.005check"  onclick="handleTechniqueClick('T4203.005')"></td>
-<td id="T4402.008">T4402.008 Statement Reframed by Removal from Context<input type="checkbox" id="T4402.008check"  onclick="handleTechniqueClick('T4402.008')"></td>
+<td bgcolor=white> </td>
+<td id="T4009.002">T4009.002 Access to Publication Automatically Removed after Specified Time Expires<input type="checkbox" id="T4009.002check"  onclick="handleTechniqueClick('T4009.002')"></td>
+<td id="T4203.004">T4203.004 Source Removed from Content<input type="checkbox" id="T4203.004check"  onclick="handleTechniqueClick('T4203.004')"></td>
+<td id="T4401.007">T4401.007 Claim Previously Fact Checked<input type="checkbox" id="T4401.007check"  onclick="handleTechniqueClick('T4401.007')"></td>
+<td id="T4604">T4604 Harmful Content<input type="checkbox" id="T4604check"  onclick="handleTechniqueClick('T4604')"></td>
+<td id="T4003.004">T4003.004 Fact Check<input type="checkbox" id="T4003.004check"  onclick="handleTechniqueClick('T4003.004')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.005">T2003.005 Community Forum Platform<input type="checkbox" id="T2003.005check"  onclick="handleTechniqueClick('T2003.005')"></td>
 <td id="T2025">T2025 Asset Gating<input type="checkbox" id="T2025check"  onclick="handleTechniqueClick('T2025')"></td>
 <td id="T2042.009">T2042.009 Romantic Suitor Role<input type="checkbox" id="T2042.009check"  onclick="handleTechniqueClick('T2042.009')"></td>
+<td bgcolor=white> </td>
 <td id="T2203.006">T2203.006 Block Asset<input type="checkbox" id="T2203.006check"  onclick="handleTechniqueClick('T2203.006')"></td>
 <td id="T2224.004">T2224.004 Platform Denies Infringement is Infringing<input type="checkbox" id="T2224.004check"  onclick="handleTechniqueClick('T2224.004')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.006">T4002.006 Video Content<input type="checkbox" id="T4002.006check"  onclick="handleTechniqueClick('T4002.006')"></td>
 <td bgcolor=white> </td>
-<td id="T4402.009">T4402.009 Entertainment Media Content Incorrectly Presented as Depicting Reality<input type="checkbox" id="T4402.009check"  onclick="handleTechniqueClick('T4402.009')"></td>
+<td id="T4009.003">T4009.003 Ability to View Publication Restricted to Specified Audience within Platform<input type="checkbox" id="T4009.003check"  onclick="handleTechniqueClick('T4009.003')"></td>
+<td id="T4203.005">T4203.005 AI-Edited Content<input type="checkbox" id="T4203.005check"  onclick="handleTechniqueClick('T4203.005')"></td>
+<td id="T4402">T4402 Reframe Context<input type="checkbox" id="T4402check"  onclick="handleTechniqueClick('T4402')"></td>
+<td id="T4604.001">T4604.001 Content Constitutes Unsolicited Sexual Imagery<input type="checkbox" id="T4604.001check"  onclick="handleTechniqueClick('T4604.001')"></td>
+<td id="T4003.005">T4003.005 Impersonated Content<input type="checkbox" id="T4003.005check"  onclick="handleTechniqueClick('T4003.005')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.006">T2003.006 Image Board Platform<input type="checkbox" id="T2003.006check"  onclick="handleTechniqueClick('T2003.006')"></td>
 <td id="T2025.001">T2025.001 Gated Asset<input type="checkbox" id="T2025.001check"  onclick="handleTechniqueClick('T2025.001')"></td>
 <td id="T2042.010">T2042.010 Party Official Role<input type="checkbox" id="T2042.010check"  onclick="handleTechniqueClick('T2042.010')"></td>
-<td id="T2204">T2204 Acquire Content<input type="checkbox" id="T2204check"  onclick="handleTechniqueClick('T2204')"></td>
+<td bgcolor=white> </td>
+<td id="T2203.007">T2203.007 Unfollow Asset<input type="checkbox" id="T2203.007check"  onclick="handleTechniqueClick('T2203.007')"></td>
 <td id="T2225">T2225 Issue with Platform Moderation Action<input type="checkbox" id="T2225check"  onclick="handleTechniqueClick('T2225')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.007">T4002.007 Vertical Video<input type="checkbox" id="T4002.007check"  onclick="handleTechniqueClick('T4002.007')"></td>
 <td bgcolor=white> </td>
-<td id="T4402.010">T4402.010 Content Originally Produced as Satire Presented as Not Satire<input type="checkbox" id="T4402.010check"  onclick="handleTechniqueClick('T4402.010')"></td>
+<td id="T4009.004">T4009.004 Ability to Comment on Publication Restricted to Specified Audience within Platform<input type="checkbox" id="T4009.004check"  onclick="handleTechniqueClick('T4009.004')"></td>
+<td id="T4407">T4407 Content Sourcing Details<input type="checkbox" id="T4407check"  onclick="handleTechniqueClick('T4407')"></td>
+<td id="T4402.001">T4402.001 Incorrect Subtitled Speech Reframes Context<input type="checkbox" id="T4402.001check"  onclick="handleTechniqueClick('T4402.001')"></td>
+<td id="T4604.002">T4604.002 Content Constitutes Unsolicited Request for Sexual Imagery<input type="checkbox" id="T4604.002check"  onclick="handleTechniqueClick('T4604.002')"></td>
+<td id="T4003.006">T4003.006 Document<input type="checkbox" id="T4003.006check"  onclick="handleTechniqueClick('T4003.006')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.007">T2003.007 Question and Answer Platform<input type="checkbox" id="T2003.007check"  onclick="handleTechniqueClick('T2003.007')"></td>
 <td id="T2025.002">T2025.002 Invite Gated Asset<input type="checkbox" id="T2025.002check"  onclick="handleTechniqueClick('T2025.002')"></td>
 <td id="T2042.011">T2042.011 Government Official Role<input type="checkbox" id="T2042.011check"  onclick="handleTechniqueClick('T2042.011')"></td>
-<td id="T2204.001">T2204.001 Produce<input type="checkbox" id="T2204.001check"  onclick="handleTechniqueClick('T2204.001')"></td>
+<td bgcolor=white> </td>
+<td id="T2203.008">T2203.008 Leave Community<input type="checkbox" id="T2203.008check"  onclick="handleTechniqueClick('T2203.008')"></td>
 <td id="T2225.001">T2225.001 Platform Fails to Provide Clear Reason for Moderation Decision<input type="checkbox" id="T2225.001check"  onclick="handleTechniqueClick('T2225.001')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.008">T4002.008 Horizontal Video<input type="checkbox" id="T4002.008check"  onclick="handleTechniqueClick('T4002.008')"></td>
 <td bgcolor=white> </td>
-<td id="T4403">T4403 Issues with Cited Academic Research<input type="checkbox" id="T4403check"  onclick="handleTechniqueClick('T4403')"></td>
+<td id="T4009.005">T4009.005 Ability to Comment on Publication Disabled for All Users within Platform<input type="checkbox" id="T4009.005check"  onclick="handleTechniqueClick('T4009.005')"></td>
+<td id="T4407.001">T4407.001 Incorrect Content Source Presented<input type="checkbox" id="T4407.001check"  onclick="handleTechniqueClick('T4407.001')"></td>
+<td id="T4402.002">T4402.002 Edits Made to News Report which Reframe Context<input type="checkbox" id="T4402.002check"  onclick="handleTechniqueClick('T4402.002')"></td>
+<td id="T4604.003">T4604.003 Content Constitutes Voyeuristic Content<input type="checkbox" id="T4604.003check"  onclick="handleTechniqueClick('T4604.003')"></td>
+<td id="T4003.007">T4003.007 Book<input type="checkbox" id="T4003.007check"  onclick="handleTechniqueClick('T4003.007')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.008">T2003.008 Online Game Platform<input type="checkbox" id="T2003.008check"  onclick="handleTechniqueClick('T2003.008')"></td>
 <td id="T2025.003">T2025.003 Approval Gated Asset<input type="checkbox" id="T2025.003check"  onclick="handleTechniqueClick('T2025.003')"></td>
-<td id="T2042.012">T2042.012 Government Employee Role<input type="checkbox" id="T2042.012check"  onclick="handleTechniqueClick('T2042.012')"></td>
+<td id="T2042.013">T2042.013 Law Enforcement Officer Role<input type="checkbox" id="T2042.013check"  onclick="handleTechniqueClick('T2042.013')"></td>
 <td bgcolor=white> </td>
+<td id="T2203.009">T2203.009 End Connection with Asset<input type="checkbox" id="T2203.009check"  onclick="handleTechniqueClick('T2203.009')"></td>
 <td id="T2225.002">T2225.002 Platform Fails to Adequately Communicate Moderation Decision<input type="checkbox" id="T2225.002check"  onclick="handleTechniqueClick('T2225.002')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.009">T4002.009 Subtitled Speech<input type="checkbox" id="T4002.009check"  onclick="handleTechniqueClick('T4002.009')"></td>
 <td bgcolor=white> </td>
-<td id="T4403.001">T4403.001 Narrative Cites Nonexistent Academic Research<input type="checkbox" id="T4403.001check"  onclick="handleTechniqueClick('T4403.001')"></td>
+<td bgcolor=white> </td>
+<td id="T4407.002">T4407.002 Content Presented as Produced by Third Party<input type="checkbox" id="T4407.002check"  onclick="handleTechniqueClick('T4407.002')"></td>
+<td id="T4402.003">T4402.003 Historic Content Incorrectly Presented as Current<input type="checkbox" id="T4402.003check"  onclick="handleTechniqueClick('T4402.003')"></td>
+<td id="T4604.004">T4604.004 Content Constitutes CSAM<input type="checkbox" id="T4604.004check"  onclick="handleTechniqueClick('T4604.004')"></td>
+<td id="T4003.008">T4003.008 Podcast Episode<input type="checkbox" id="T4003.008check"  onclick="handleTechniqueClick('T4003.008')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2003.009">T2003.009 Dating Platform<input type="checkbox" id="T2003.009check"  onclick="handleTechniqueClick('T2003.009')"></td>
 <td id="T2025.004">T2025.004 Geoblocked Asset<input type="checkbox" id="T2025.004check"  onclick="handleTechniqueClick('T2025.004')"></td>
-<td id="T2042.013">T2042.013 Law Enforcement Officer Role<input type="checkbox" id="T2042.013check"  onclick="handleTechniqueClick('T2042.013')"></td>
+<td id="T2042.014">T2042.014 Sex Worker Role<input type="checkbox" id="T2042.014check"  onclick="handleTechniqueClick('T2042.014')"></td>
 <td bgcolor=white> </td>
+<td id="T2204">T2204 Obtain Material<input type="checkbox" id="T2204check"  onclick="handleTechniqueClick('T2204')"></td>
 <td id="T2225.003">T2225.003 Platform Fails to Disclose Use of Automation in Moderation Decision<input type="checkbox" id="T2225.003check"  onclick="handleTechniqueClick('T2225.003')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.010">T4002.010 Audio Content<input type="checkbox" id="T4002.010check"  onclick="handleTechniqueClick('T4002.010')"></td>
 <td bgcolor=white> </td>
-<td id="T4403.002">T4403.002 Narrative Misrepresents Findings of Cited Academic Research<input type="checkbox" id="T4403.002check"  onclick="handleTechniqueClick('T4403.002')"></td>
+<td bgcolor=white> </td>
+<td id="T4407.003">T4407.003 Content Presented as Produced by Actor<input type="checkbox" id="T4407.003check"  onclick="handleTechniqueClick('T4407.003')"></td>
+<td id="T4402.004">T4402.004 Content Incorrectly Presented as Depicting Another Location<input type="checkbox" id="T4402.004check"  onclick="handleTechniqueClick('T4402.004')"></td>
+<td id="T4604.005">T4604.005 Content Constitutes Sextortion<input type="checkbox" id="T4604.005check"  onclick="handleTechniqueClick('T4604.005')"></td>
+<td id="T4003.009">T4003.009 Job Posting<input type="checkbox" id="T4003.009check"  onclick="handleTechniqueClick('T4003.009')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004">T2004 Content Hosting Platform<input type="checkbox" id="T2004check"  onclick="handleTechniqueClick('T2004')"></td>
 <td id="T2025.005">T2025.005 Paid Access Asset<input type="checkbox" id="T2025.005check"  onclick="handleTechniqueClick('T2025.005')"></td>
-<td id="T2042.014">T2042.014 Sex Worker Role<input type="checkbox" id="T2042.014check"  onclick="handleTechniqueClick('T2042.014')"></td>
+<td id="T2042.015">T2042.015 Dissident Role<input type="checkbox" id="T2042.015check"  onclick="handleTechniqueClick('T2042.015')"></td>
 <td bgcolor=white> </td>
+<td id="T2204.001">T2204.001 Produce<input type="checkbox" id="T2204.001check"  onclick="handleTechniqueClick('T2204.001')"></td>
 <td id="T2225.004">T2225.004 Platform Fails to Provide Method to Challenge Moderation Decision<input type="checkbox" id="T2225.004check"  onclick="handleTechniqueClick('T2225.004')"></td>
 <td bgcolor=white> </td>
-<td id="T4002.011">T4002.011 Music<input type="checkbox" id="T4002.011check"  onclick="handleTechniqueClick('T4002.011')"></td>
 <td bgcolor=white> </td>
-<td id="T4403.003">T4403.003 Narrative Cites Retracted Academic Research<input type="checkbox" id="T4403.003check"  onclick="handleTechniqueClick('T4403.003')"></td>
+<td bgcolor=white> </td>
+<td id="T4407.004">T4407.004 Source Embedded in Media<input type="checkbox" id="T4407.004check"  onclick="handleTechniqueClick('T4407.004')"></td>
+<td id="T4402.005">T4402.005 Video Game Content Incorrectly Presented as Depicting Reality<input type="checkbox" id="T4402.005check"  onclick="handleTechniqueClick('T4402.005')"></td>
+<td id="T4604.006">T4604.006 Content Constitutes Abusive Content<input type="checkbox" id="T4604.006check"  onclick="handleTechniqueClick('T4604.006')"></td>
+<td id="T4003.010">T4003.010 Secret Recording<input type="checkbox" id="T4003.010check"  onclick="handleTechniqueClick('T4003.010')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.001">T2004.001 Website Asset<input type="checkbox" id="T2004.001check"  onclick="handleTechniqueClick('T2004.001')"></td>
 <td id="T2025.006">T2025.006 Subscription Access Asset<input type="checkbox" id="T2025.006check"  onclick="handleTechniqueClick('T2025.006')"></td>
-<td id="T2043">T2043 Institutional Role<input type="checkbox" id="T2043check"  onclick="handleTechniqueClick('T2043')"></td>
+<td id="T2042.016">T2042.016 Student Role<input type="checkbox" id="T2042.016check"  onclick="handleTechniqueClick('T2042.016')"></td>
 <td bgcolor=white> </td>
+<td id="T2204.002">T2204.002 Give Material<input type="checkbox" id="T2204.002check"  onclick="handleTechniqueClick('T2204.002')"></td>
 <td id="T2225.005">T2225.005 Platform Fails to Meet Legal Standards for Method to Challenge Moderation Decision<input type="checkbox" id="T2225.005check"  onclick="handleTechniqueClick('T2225.005')"></td>
 <td bgcolor=white> </td>
-<td id="T4003">T4003 Content Style<input type="checkbox" id="T4003check"  onclick="handleTechniqueClick('T4003')"></td>
 <td bgcolor=white> </td>
-<td id="T4403.004">T4403.004 Narrative Cites Academic Research not Peer Reviewed<input type="checkbox" id="T4403.004check"  onclick="handleTechniqueClick('T4403.004')"></td>
+<td bgcolor=white> </td>
+<td id="T4407.005">T4407.005 Anonymised Content<input type="checkbox" id="T4407.005check"  onclick="handleTechniqueClick('T4407.005')"></td>
+<td id="T4402.006">T4402.006 AI-Generated Content Incorrectly Presented as Depicting Reality<input type="checkbox" id="T4402.006check"  onclick="handleTechniqueClick('T4402.006')"></td>
+<td id="T4604.007">T4604.007 Content Constitutes Discriminatory Content<input type="checkbox" id="T4604.007check"  onclick="handleTechniqueClick('T4604.007')"></td>
+<td id="T4003.011">T4003.011 Screen Capture<input type="checkbox" id="T4003.011check"  onclick="handleTechniqueClick('T4003.011')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.002">T2004.002 Paste Platform<input type="checkbox" id="T2004.002check"  onclick="handleTechniqueClick('T2004.002')"></td>
 <td id="T2026">T2026 Asset Acquisition<input type="checkbox" id="T2026check"  onclick="handleTechniqueClick('T2026')"></td>
-<td id="T2043.001">T2043.001 Local Institution Role<input type="checkbox" id="T2043.001check"  onclick="handleTechniqueClick('T2043.001')"></td>
+<td id="T2042.017">T2042.017 State Authority Role<input type="checkbox" id="T2042.017check"  onclick="handleTechniqueClick('T2042.017')"></td>
+<td bgcolor=white> </td>
+<td id="T2205">T2205 Obtain Asset<input type="checkbox" id="T2205check"  onclick="handleTechniqueClick('T2205')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4003.001">T4003.001 News Report<input type="checkbox" id="T4003.001check"  onclick="handleTechniqueClick('T4003.001')"></td>
 <td bgcolor=white> </td>
-<td id="T4404">T4404 Issues with Presented Statistical Evidence<input type="checkbox" id="T4404check"  onclick="handleTechniqueClick('T4404')"></td>
+<td bgcolor=white> </td>
+<td id="T4402.007">T4402.007 Context Reframed by Edits to Media<input type="checkbox" id="T4402.007check"  onclick="handleTechniqueClick('T4402.007')"></td>
+<td id="T4604.008">T4604.008 Content Constitutes Intersectional Discriminatory Content<input type="checkbox" id="T4604.008check"  onclick="handleTechniqueClick('T4604.008')"></td>
+<td id="T4003.012">T4003.012 Meme<input type="checkbox" id="T4003.012check"  onclick="handleTechniqueClick('T4003.012')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.003">T2004.003 Video Platform<input type="checkbox" id="T2004.003check"  onclick="handleTechniqueClick('T2004.003')"></td>
 <td id="T2026.001">T2026.001 Newly Created Asset<input type="checkbox" id="T2026.001check"  onclick="handleTechniqueClick('T2026.001')"></td>
-<td id="T2043.002">T2043.002 News Outlet Role<input type="checkbox" id="T2043.002check"  onclick="handleTechniqueClick('T2043.002')"></td>
+<td id="T2042.018">T2042.018 Male Role<input type="checkbox" id="T2042.018check"  onclick="handleTechniqueClick('T2042.018')"></td>
+<td bgcolor=white> </td>
+<td id="T2206">T2206 Manage Own Publication or Asset<input type="checkbox" id="T2206check"  onclick="handleTechniqueClick('T2206')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4003.002">T4003.002 Opinion Piece<input type="checkbox" id="T4003.002check"  onclick="handleTechniqueClick('T4003.002')"></td>
 <td bgcolor=white> </td>
-<td id="T4404.001">T4404.001 Narrative Presents Fabricated Statistics as Genuine Data<input type="checkbox" id="T4404.001check"  onclick="handleTechniqueClick('T4404.001')"></td>
+<td bgcolor=white> </td>
+<td id="T4402.008">T4402.008 Statement Reframed by Removal from Context<input type="checkbox" id="T4402.008check"  onclick="handleTechniqueClick('T4402.008')"></td>
+<td id="T4604.009">T4604.009 Content Constitutes Eating Disorder Content<input type="checkbox" id="T4604.009check"  onclick="handleTechniqueClick('T4604.009')"></td>
+<td id="T4003.013">T4003.013 Stock Content<input type="checkbox" id="T4003.013check"  onclick="handleTechniqueClick('T4003.013')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.004">T2004.004 Audio Platform<input type="checkbox" id="T2004.004check"  onclick="handleTechniqueClick('T2004.004')"></td>
 <td id="T2026.002">T2026.002 Pre-Existing Asset<input type="checkbox" id="T2026.002check"  onclick="handleTechniqueClick('T2026.002')"></td>
-<td id="T2043.003">T2043.003 Fact Checking Organisation Role<input type="checkbox" id="T2043.003check"  onclick="handleTechniqueClick('T2043.003')"></td>
+<td id="T2042.019">T2042.019 Female Role<input type="checkbox" id="T2042.019check"  onclick="handleTechniqueClick('T2042.019')"></td>
+<td bgcolor=white> </td>
+<td id="T2206.001">T2206.001 Delete Own Publication<input type="checkbox" id="T2206.001check"  onclick="handleTechniqueClick('T2206.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4003.003">T4003.003 Academic Research Report<input type="checkbox" id="T4003.003check"  onclick="handleTechniqueClick('T4003.003')"></td>
 <td bgcolor=white> </td>
-<td id="T4404.002">T4404.002 Narrative Uses Selective Statistics to Support Claim<input type="checkbox" id="T4404.002check"  onclick="handleTechniqueClick('T4404.002')"></td>
+<td bgcolor=white> </td>
+<td id="T4402.009">T4402.009 Entertainment Media Content Incorrectly Presented as Depicting Reality<input type="checkbox" id="T4402.009check"  onclick="handleTechniqueClick('T4402.009')"></td>
+<td bgcolor=white> </td>
+<td id="T4005">T4005 Language Details<input type="checkbox" id="T4005check"  onclick="handleTechniqueClick('T4005')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.005">T2004.005 Live Streaming Platform<input type="checkbox" id="T2004.005check"  onclick="handleTechniqueClick('T2004.005')"></td>
 <td id="T2026.003">T2026.003 Asset Activated after Period of Dormancy<input type="checkbox" id="T2026.003check"  onclick="handleTechniqueClick('T2026.003')"></td>
-<td id="T2043.004">T2043.004 Think Tank Role<input type="checkbox" id="T2043.004check"  onclick="handleTechniqueClick('T2043.004')"></td>
+<td id="T2042.020">T2042.020 Non-binary Role<input type="checkbox" id="T2042.020check"  onclick="handleTechniqueClick('T2042.020')"></td>
+<td bgcolor=white> </td>
+<td id="T2206.002">T2206.002 Edit Own Publication<input type="checkbox" id="T2206.002check"  onclick="handleTechniqueClick('T2206.002')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4003.004">T4003.004 Fact Check<input type="checkbox" id="T4003.004check"  onclick="handleTechniqueClick('T4003.004')"></td>
 <td bgcolor=white> </td>
-<td id="T4404.003">T4404.003 Narrative Uses Misinterpreted Statistics to Support Claim<input type="checkbox" id="T4404.003check"  onclick="handleTechniqueClick('T4404.003')"></td>
+<td bgcolor=white> </td>
+<td id="T4402.010">T4402.010 Content Originally Produced as Satire Presented as Not Satire<input type="checkbox" id="T4402.010check"  onclick="handleTechniqueClick('T4402.010')"></td>
+<td bgcolor=white> </td>
+<td id="T4005.001">T4005.001 Translated Content<input type="checkbox" id="T4005.001check"  onclick="handleTechniqueClick('T4005.001')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.006">T2004.006 Software Delivery Platform<input type="checkbox" id="T2004.006check"  onclick="handleTechniqueClick('T2004.006')"></td>
 <td id="T2026.004">T2026.004 Freely Created Asset<input type="checkbox" id="T2026.004check"  onclick="handleTechniqueClick('T2026.004')"></td>
-<td id="T2043.005">T2043.005 Business Role<input type="checkbox" id="T2043.005check"  onclick="handleTechniqueClick('T2043.005')"></td>
+<td id="T2043">T2043 Institutional Role<input type="checkbox" id="T2043check"  onclick="handleTechniqueClick('T2043')"></td>
+<td bgcolor=white> </td>
+<td id="T2206.003">T2206.003 Delete Own Asset<input type="checkbox" id="T2206.003check"  onclick="handleTechniqueClick('T2206.003')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4003.005">T4003.005 Impersonated Content<input type="checkbox" id="T4003.005check"  onclick="handleTechniqueClick('T4003.005')"></td>
 <td bgcolor=white> </td>
-<td id="T4404.004">T4404.004 Narrative Uses Misleading Data Visualisation<input type="checkbox" id="T4404.004check"  onclick="handleTechniqueClick('T4404.004')"></td>
+<td bgcolor=white> </td>
+<td id="T4403">T4403 Issues with Cited Academic Research<input type="checkbox" id="T4403check"  onclick="handleTechniqueClick('T4403')"></td>
+<td bgcolor=white> </td>
+<td id="T4005.002">T4005.002 Non-Native Language Error<input type="checkbox" id="T4005.002check"  onclick="handleTechniqueClick('T4005.002')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.007">T2004.007 File Hosting Platform<input type="checkbox" id="T2004.007check"  onclick="handleTechniqueClick('T2004.007')"></td>
 <td id="T2026.005">T2026.005 Paid Created Asset<input type="checkbox" id="T2026.005check"  onclick="handleTechniqueClick('T2026.005')"></td>
-<td id="T2043.006">T2043.006 Government Institution Role<input type="checkbox" id="T2043.006check"  onclick="handleTechniqueClick('T2043.006')"></td>
+<td id="T2043.001">T2043.001 Local Institution Role<input type="checkbox" id="T2043.001check"  onclick="handleTechniqueClick('T2043.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4003.006">T4003.006 Document<input type="checkbox" id="T4003.006check"  onclick="handleTechniqueClick('T4003.006')"></td>
 <td bgcolor=white> </td>
-<td id="T4405">T4405 Issue with Content's Headline<input type="checkbox" id="T4405check"  onclick="handleTechniqueClick('T4405')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4403.001">T4403.001 Narrative Cites Nonexistent Academic Research<input type="checkbox" id="T4403.001check"  onclick="handleTechniqueClick('T4403.001')"></td>
+<td bgcolor=white> </td>
+<td id="T4005.003">T4005.003 Coded Terminology<input type="checkbox" id="T4005.003check"  onclick="handleTechniqueClick('T4005.003')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.008">T2004.008 Wiki Platform<input type="checkbox" id="T2004.008check"  onclick="handleTechniqueClick('T2004.008')"></td>
 <td id="T2026.006">T2026.006 Bulk Created Asset<input type="checkbox" id="T2026.006check"  onclick="handleTechniqueClick('T2026.006')"></td>
-<td id="T2043.007">T2043.007 NGO Role<input type="checkbox" id="T2043.007check"  onclick="handleTechniqueClick('T2043.007')"></td>
+<td id="T2043.002">T2043.002 News Outlet Role<input type="checkbox" id="T2043.002check"  onclick="handleTechniqueClick('T2043.002')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4003.007">T4003.007 Book<input type="checkbox" id="T4003.007check"  onclick="handleTechniqueClick('T4003.007')"></td>
 <td bgcolor=white> </td>
-<td id="T4405.001">T4405.001 Content Constitutes Clickbait<input type="checkbox" id="T4405.001check"  onclick="handleTechniqueClick('T4405.001')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4403.002">T4403.002 Narrative Misrepresents Findings of Cited Academic Research<input type="checkbox" id="T4403.002check"  onclick="handleTechniqueClick('T4403.002')"></td>
+<td bgcolor=white> </td>
+<td id="T4005.004">T4005.004 Machine Translated Content<input type="checkbox" id="T4005.004check"  onclick="handleTechniqueClick('T4005.004')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.009">T2004.009 Content Subscription Service Platform<input type="checkbox" id="T2004.009check"  onclick="handleTechniqueClick('T2004.009')"></td>
 <td id="T2026.007">T2026.007 Purchased Existing Asset<input type="checkbox" id="T2026.007check"  onclick="handleTechniqueClick('T2026.007')"></td>
-<td id="T2043.008">T2043.008 Social Cause Role<input type="checkbox" id="T2043.008check"  onclick="handleTechniqueClick('T2043.008')"></td>
+<td id="T2043.003">T2043.003 Fact Checking Organisation Role<input type="checkbox" id="T2043.003check"  onclick="handleTechniqueClick('T2043.003')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4003.008">T4003.008 Podcast Episode<input type="checkbox" id="T4003.008check"  onclick="handleTechniqueClick('T4003.008')"></td>
 <td bgcolor=white> </td>
-<td id="T4406">T4406 Rhetorical Device<input type="checkbox" id="T4406check"  onclick="handleTechniqueClick('T4406')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4403.003">T4403.003 Narrative Cites Retracted Academic Research<input type="checkbox" id="T4403.003check"  onclick="handleTechniqueClick('T4403.003')"></td>
+<td bgcolor=white> </td>
+<td id="T4007">T4007 Content Relationship to Platform Policy<input type="checkbox" id="T4007check"  onclick="handleTechniqueClick('T4007')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2004.010">T2004.010 Blog Asset<input type="checkbox" id="T2004.010check"  onclick="handleTechniqueClick('T2004.010')"></td>
 <td id="T2026.008">T2026.008 Rented Existing Asset<input type="checkbox" id="T2026.008check"  onclick="handleTechniqueClick('T2026.008')"></td>
-<td id="T2043.009">T2043.009 Adult Entertainment Outlet Role<input type="checkbox" id="T2043.009check"  onclick="handleTechniqueClick('T2043.009')"></td>
+<td id="T2043.004">T2043.004 Think Tank Role<input type="checkbox" id="T2043.004check"  onclick="handleTechniqueClick('T2043.004')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4004">T4004 Content Details<input type="checkbox" id="T4004check"  onclick="handleTechniqueClick('T4004')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.001">T4406.001 Narrative Ties In to Current Events<input type="checkbox" id="T4406.001check"  onclick="handleTechniqueClick('T4406.001')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4403.004">T4403.004 Narrative Cites Academic Research not Peer Reviewed<input type="checkbox" id="T4403.004check"  onclick="handleTechniqueClick('T4403.004')"></td>
+<td bgcolor=white> </td>
+<td id="T4007.001">T4007.001 Content Goes Against Platform Policy<input type="checkbox" id="T4007.001check"  onclick="handleTechniqueClick('T4007.001')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005">T2005 Digital Service Platform<input type="checkbox" id="T2005check"  onclick="handleTechniqueClick('T2005')"></td>
 <td id="T2026.009">T2026.009 Compromised Existing Asset<input type="checkbox" id="T2026.009check"  onclick="handleTechniqueClick('T2026.009')"></td>
-<td id="T2044">T2044 Asset Role Validity<input type="checkbox" id="T2044check"  onclick="handleTechniqueClick('T2044')"></td>
+<td id="T2043.005">T2043.005 Business Role<input type="checkbox" id="T2043.005check"  onclick="handleTechniqueClick('T2043.005')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4004.001">T4004.001 Content Constitutes Leak of Private Material<input type="checkbox" id="T4004.001check"  onclick="handleTechniqueClick('T4004.001')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.002">T4406.002 Narrative Uses False Cause<input type="checkbox" id="T4406.002check"  onclick="handleTechniqueClick('T4406.002')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4404">T4404 Issues with Presented Statistical Evidence<input type="checkbox" id="T4404check"  onclick="handleTechniqueClick('T4404')"></td>
+<td bgcolor=white> </td>
+<td id="T4007.002">T4007.002 Content Within Platform Policy<input type="checkbox" id="T4007.002check"  onclick="handleTechniqueClick('T4007.002')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005.001">T2005.001 Blog Hosting Service Platform<input type="checkbox" id="T2005.001check"  onclick="handleTechniqueClick('T2005.001')"></td>
+<td id="T2027">T2027 Asset Positioning in Ecosystem<input type="checkbox" id="T2027check"  onclick="handleTechniqueClick('T2027')"></td>
+<td id="T2043.006">T2043.006 Government Institution Role<input type="checkbox" id="T2043.006check"  onclick="handleTechniqueClick('T2043.006')"></td>
 <td bgcolor=white> </td>
-<td id="T2044.001">T2044.001 Identity Has Legitimate Claim to Role<input type="checkbox" id="T2044.001check"  onclick="handleTechniqueClick('T2044.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4004.002">T4004.002 Secret Recording<input type="checkbox" id="T4004.002check"  onclick="handleTechniqueClick('T4004.002')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.003">T4406.003 Narrative Uses Whataboutism<input type="checkbox" id="T4406.003check"  onclick="handleTechniqueClick('T4406.003')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4404.001">T4404.001 Narrative Presents Fabricated Statistics as Genuine Data<input type="checkbox" id="T4404.001check"  onclick="handleTechniqueClick('T4404.001')"></td>
+<td bgcolor=white> </td>
+<td id="T4601">T4601 Content Algorithmic Optimisation<input type="checkbox" id="T4601check"  onclick="handleTechniqueClick('T4601')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005.002">T2005.002 Website Hosting Service Platform<input type="checkbox" id="T2005.002check"  onclick="handleTechniqueClick('T2005.002')"></td>
+<td id="T2027.001">T2027.001 Asset is Following Asset<input type="checkbox" id="T2027.001check"  onclick="handleTechniqueClick('T2027.001')"></td>
+<td id="T2043.007">T2043.007 NGO Role<input type="checkbox" id="T2043.007check"  onclick="handleTechniqueClick('T2043.007')"></td>
 <td bgcolor=white> </td>
-<td id="T2044.002">T2044.002 Identity Does Not Have Legitimate Claim to Role<input type="checkbox" id="T2044.002check"  onclick="handleTechniqueClick('T2044.002')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4004.003">T4004.003 Screen Capture<input type="checkbox" id="T4004.003check"  onclick="handleTechniqueClick('T4004.003')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.004">T4406.004 Narrative Uses Cherry Picking<input type="checkbox" id="T4406.004check"  onclick="handleTechniqueClick('T4406.004')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4404.002">T4404.002 Narrative Uses Selective Statistics to Support Claim<input type="checkbox" id="T4404.002check"  onclick="handleTechniqueClick('T4404.002')"></td>
+<td bgcolor=white> </td>
+<td id="T4601.001">T4601.001 Platform Recommendation Algorithm Optimised Content<input type="checkbox" id="T4601.001check"  onclick="handleTechniqueClick('T4601.001')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005.003">T2005.003 Email Service Platform<input type="checkbox" id="T2005.003check"  onclick="handleTechniqueClick('T2005.003')"></td>
+<td id="T2027.002">T2027.002 Asset is Connected with Asset<input type="checkbox" id="T2027.002check"  onclick="handleTechniqueClick('T2027.002')"></td>
+<td id="T2043.008">T2043.008 Social Cause Role<input type="checkbox" id="T2043.008check"  onclick="handleTechniqueClick('T2043.008')"></td>
 <td bgcolor=white> </td>
-<td id="T2045">T2045 Use of Automation<input type="checkbox" id="T2045check"  onclick="handleTechniqueClick('T2045')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4004.004">T4004.004 Anonymised Content<input type="checkbox" id="T4004.004check"  onclick="handleTechniqueClick('T4004.004')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.005">T4406.005 Narrative Uses Anecdote<input type="checkbox" id="T4406.005check"  onclick="handleTechniqueClick('T4406.005')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4404.003">T4404.003 Narrative Uses Misinterpreted Statistics to Support Claim<input type="checkbox" id="T4404.003check"  onclick="handleTechniqueClick('T4404.003')"></td>
+<td bgcolor=white> </td>
+<td id="T4601.002">T4601.002 Search Engine Optimised Content<input type="checkbox" id="T4601.002check"  onclick="handleTechniqueClick('T4601.002')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005.004">T2005.004 Link Shortening Service Platform<input type="checkbox" id="T2005.004check"  onclick="handleTechniqueClick('T2005.004')"></td>
+<td id="T2027.003">T2027.003 Asset is Part of Community<input type="checkbox" id="T2027.003check"  onclick="handleTechniqueClick('T2027.003')"></td>
+<td id="T2043.009">T2043.009 Adult Entertainment Outlet Role<input type="checkbox" id="T2043.009check"  onclick="handleTechniqueClick('T2043.009')"></td>
 <td bgcolor=white> </td>
-<td id="T2045.001">T2045.001 Asset Uses and Discloses Automation<input type="checkbox" id="T2045.001check"  onclick="handleTechniqueClick('T2045.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4004.005">T4004.005 Meme<input type="checkbox" id="T4004.005check"  onclick="handleTechniqueClick('T4004.005')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.006">T4406.006 Narrative Uses Strawman<input type="checkbox" id="T4406.006check"  onclick="handleTechniqueClick('T4406.006')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4404.004">T4404.004 Narrative Uses Misleading Data Visualisation<input type="checkbox" id="T4404.004check"  onclick="handleTechniqueClick('T4404.004')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005.005">T2005.005 Online Advertising Platform<input type="checkbox" id="T2005.005check"  onclick="handleTechniqueClick('T2005.005')"></td>
+<td id="T2027.004">T2027.004 Asset Moderates Community<input type="checkbox" id="T2027.004check"  onclick="handleTechniqueClick('T2027.004')"></td>
+<td id="T2043.010">T2043.010 Bank Role<input type="checkbox" id="T2043.010check"  onclick="handleTechniqueClick('T2043.010')"></td>
 <td bgcolor=white> </td>
-<td id="T2045.002">T2045.002 Asset Uses Automation without Disclosure<input type="checkbox" id="T2045.002check"  onclick="handleTechniqueClick('T2045.002')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4004.006">T4004.006 Stock Content<input type="checkbox" id="T4004.006check"  onclick="handleTechniqueClick('T4004.006')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.007">T4406.007 Narrative Uses Leading Question<input type="checkbox" id="T4406.007check"  onclick="handleTechniqueClick('T4406.007')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4405">T4405 Issue with Content's Headline<input type="checkbox" id="T4405check"  onclick="handleTechniqueClick('T4405')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005.006">T2005.006 Search Engine Platform<input type="checkbox" id="T2005.006check"  onclick="handleTechniqueClick('T2005.006')"></td>
+<td id="T2027.005">T2027.005 Asset Exists on Platform<input type="checkbox" id="T2027.005check"  onclick="handleTechniqueClick('T2027.005')"></td>
+<td id="T2043.011">T2043.011 University Role<input type="checkbox" id="T2043.011check"  onclick="handleTechniqueClick('T2043.011')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4005">T4005 Language Details<input type="checkbox" id="T4005check"  onclick="handleTechniqueClick('T4005')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.008">T4406.008 Narrative Uses Appeal to Emotion<input type="checkbox" id="T4406.008check"  onclick="handleTechniqueClick('T4406.008')"></td>
+<td bgcolor=white> </td>
+<td id="T4405.001">T4405.001 Content Constitutes Clickbait<input type="checkbox" id="T4405.001check"  onclick="handleTechniqueClick('T4405.001')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005.007">T2005.007 AI LLM Platform<input type="checkbox" id="T2005.007check"  onclick="handleTechniqueClick('T2005.007')"></td>
 <td bgcolor=white> </td>
+<td id="T2044">T2044 Role Validity<input type="checkbox" id="T2044check"  onclick="handleTechniqueClick('T2044')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4005.001">T4005.001 Translated Content<input type="checkbox" id="T4005.001check"  onclick="handleTechniqueClick('T4005.001')"></td>
 <td bgcolor=white> </td>
-<td id="T4406.009">T4406.009 Narrative Uses Exaggeration<input type="checkbox" id="T4406.009check"  onclick="handleTechniqueClick('T4406.009')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4406">T4406 Rhetorical Device<input type="checkbox" id="T4406check"  onclick="handleTechniqueClick('T4406')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
 <td id="T2005.008">T2005.008 AI Media Platform<input type="checkbox" id="T2005.008check"  onclick="handleTechniqueClick('T2005.008')"></td>
 <td bgcolor=white> </td>
+<td id="T2044.001">T2044.001 Identity Has Legitimate Claim to Role<input type="checkbox" id="T2044.001check"  onclick="handleTechniqueClick('T2044.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4005.002">T4005.002 Non-Native Language Error<input type="checkbox" id="T4005.002check"  onclick="handleTechniqueClick('T4005.002')"></td>
 <td bgcolor=white> </td>
-<td id="T4407">T4407 Content Sourcing Details<input type="checkbox" id="T4407check"  onclick="handleTechniqueClick('T4407')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4406.001">T4406.001 Narrative Ties In to Current Events<input type="checkbox" id="T4406.001check"  onclick="handleTechniqueClick('T4406.001')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
+<td id="T2005.009">T2005.009 Financial Service Platform<input type="checkbox" id="T2005.009check"  onclick="handleTechniqueClick('T2005.009')"></td>
+<td bgcolor=white> </td>
+<td id="T2044.002">T2044.002 Identity Does Not Have Legitimate Claim to Role<input type="checkbox" id="T2044.002check"  onclick="handleTechniqueClick('T2044.002')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4005.003">T4005.003 Coded Terminology<input type="checkbox" id="T4005.003check"  onclick="handleTechniqueClick('T4005.003')"></td>
 <td bgcolor=white> </td>
-<td id="T4407.001">T4407.001 Incorrect Content Source Presented<input type="checkbox" id="T4407.001check"  onclick="handleTechniqueClick('T4407.001')"></td>
+<td id="T4406.002">T4406.002 Narrative Uses False Cause<input type="checkbox" id="T4406.002check"  onclick="handleTechniqueClick('T4406.002')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
+<td id="T2005.010">T2005.010 Job Platform<input type="checkbox" id="T2005.010check"  onclick="handleTechniqueClick('T2005.010')"></td>
+<td bgcolor=white> </td>
+<td id="T2046">T2046 Relationship Type<input type="checkbox" id="T2046check"  onclick="handleTechniqueClick('T2046')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4005.004">T4005.004 Machine Translated Content<input type="checkbox" id="T4005.004check"  onclick="handleTechniqueClick('T4005.004')"></td>
 <td bgcolor=white> </td>
-<td id="T4407.002">T4407.002 Content Presented as Produced by Third Party<input type="checkbox" id="T4407.002check"  onclick="handleTechniqueClick('T4407.002')"></td>
+<td id="T4406.003">T4406.003 Narrative Uses Whataboutism<input type="checkbox" id="T4406.003check"  onclick="handleTechniqueClick('T4406.003')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 </tr>
 <tr>
+<td id="T2006">T2006 Multiple Assets<input type="checkbox" id="T2006check"  onclick="handleTechniqueClick('T2006')"></td>
 <td bgcolor=white> </td>
+<td id="T2046.001">T2046.001 Acquainted With<input type="checkbox" id="T2046.001check"  onclick="handleTechniqueClick('T2046.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4006">T4006 Demonstrably False Content<input type="checkbox" id="T4006check"  onclick="handleTechniqueClick('T4006')"></td>
 <td bgcolor=white> </td>
-<td id="T4407.003">T4407.003 Content Presented as Produced by Actor<input type="checkbox" id="T4407.003check"  onclick="handleTechniqueClick('T4407.003')"></td>
 <td bgcolor=white> </td>
-</tr>
-<tr>
+<td id="T4406.004">T4406.004 Narrative Uses Cherry Picking<input type="checkbox" id="T4406.004check"  onclick="handleTechniqueClick('T4406.004')"></td>
 <td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4006.001">T4006.001 Statement Incorrectly Presented as Made by Individual or Institution<input type="checkbox" id="T4006.001check"  onclick="handleTechniqueClick('T4006.001')"></td>
-<td bgcolor=white> </td>
-<td id="T4407.004">T4407.004 Source Embedded in Media<input type="checkbox" id="T4407.004check"  onclick="handleTechniqueClick('T4407.004')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4006.002">T4006.002 Falsified Depiction of Content Amplification<input type="checkbox" id="T4006.002check"  onclick="handleTechniqueClick('T4006.002')"></td>
-<td bgcolor=white> </td>
-<td id="T4601">T4601 Content Algorithmic Optimisation<input type="checkbox" id="T4601check"  onclick="handleTechniqueClick('T4601')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4006.003">T4006.003 Falsified Graffiti or Signage<input type="checkbox" id="T4006.003check"  onclick="handleTechniqueClick('T4006.003')"></td>
-<td bgcolor=white> </td>
-<td id="T4601.001">T4601.001 Platform Recommendation Algorithm Optimised Content<input type="checkbox" id="T4601.001check"  onclick="handleTechniqueClick('T4601.001')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4006.004">T4006.004 Imagery Depicting Individual Edited to Introduce Sexual Material<input type="checkbox" id="T4006.004check"  onclick="handleTechniqueClick('T4006.004')"></td>
-<td bgcolor=white> </td>
-<td id="T4601.002">T4601.002 Search Engine Optimised Content<input type="checkbox" id="T4601.002check"  onclick="handleTechniqueClick('T4601.002')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4006.005">T4006.005 Claim to Nonexistent Physical Address<input type="checkbox" id="T4006.005check"  onclick="handleTechniqueClick('T4006.005')"></td>
-<td bgcolor=white> </td>
-<td id="T4602">T4602 Content Contains Link<input type="checkbox" id="T4602check"  onclick="handleTechniqueClick('T4602')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4006.006">T4006.006 Incorrect Claim to Real Physical Address<input type="checkbox" id="T4006.006check"  onclick="handleTechniqueClick('T4006.006')"></td>
-<td bgcolor=white> </td>
-<td id="T4602.001">T4602.001 Content Contains Disguised Link<input type="checkbox" id="T4602.001check"  onclick="handleTechniqueClick('T4602.001')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4006.007">T4006.007 Mislabeled Publication<input type="checkbox" id="T4006.007check"  onclick="handleTechniqueClick('T4006.007')"></td>
-<td bgcolor=white> </td>
-<td id="T4602.002">T4602.002 Content Contains Shortened Link<input type="checkbox" id="T4602.002check"  onclick="handleTechniqueClick('T4602.002')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4006.008">T4006.008 Action Incorrectly Presented as Taken by Individual or Institution<input type="checkbox" id="T4006.008check"  onclick="handleTechniqueClick('T4006.008')"></td>
-<td bgcolor=white> </td>
-<td id="T4602.003">T4602.003 Content Contains QR Code Link<input type="checkbox" id="T4602.003check"  onclick="handleTechniqueClick('T4602.003')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4007">T4007 Content Relationship to Platform Policy<input type="checkbox" id="T4007check"  onclick="handleTechniqueClick('T4007')"></td>
-<td bgcolor=white> </td>
-<td id="T4602.004">T4602.004 Content Contains Embedded Link<input type="checkbox" id="T4602.004check"  onclick="handleTechniqueClick('T4602.004')"></td>
-<td bgcolor=white> </td>
-</tr>
-<tr>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td bgcolor=white> </td>
-<td id="T4007.001">T4007.001 Content Goes Against Platform Policy<input type="checkbox" id="T4007.001check"  onclick="handleTechniqueClick('T4007.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -710,11 +825,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2046.002">T2046.002 Related To<input type="checkbox" id="T2046.002check"  onclick="handleTechniqueClick('T2046.002')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4007.002">T4007.002 Content Within Platform Policy<input type="checkbox" id="T4007.002check"  onclick="handleTechniqueClick('T4007.002')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4406.005">T4406.005 Narrative Uses Anecdote<input type="checkbox" id="T4406.005check"  onclick="handleTechniqueClick('T4406.005')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -722,11 +842,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2046.003">T2046.003 Employed By<input type="checkbox" id="T2046.003check"  onclick="handleTechniqueClick('T2046.003')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4008">T4008 Publication Use of Platform Features<input type="checkbox" id="T4008check"  onclick="handleTechniqueClick('T4008')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4406.006">T4406.006 Narrative Uses Strawman<input type="checkbox" id="T4406.006check"  onclick="handleTechniqueClick('T4406.006')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -734,11 +859,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2046.004">T2046.004 Employer Of<input type="checkbox" id="T2046.004check"  onclick="handleTechniqueClick('T2046.004')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4008.001">T4008.001 Tag Geolocation<input type="checkbox" id="T4008.001check"  onclick="handleTechniqueClick('T4008.001')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4406.007">T4406.007 Narrative Uses Leading Question<input type="checkbox" id="T4406.007check"  onclick="handleTechniqueClick('T4406.007')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -746,11 +876,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2046.005">T2046.005 Customer Of<input type="checkbox" id="T2046.005check"  onclick="handleTechniqueClick('T2046.005')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4008.002">T4008.002 Tag Hashtag<input type="checkbox" id="T4008.002check"  onclick="handleTechniqueClick('T4008.002')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4406.008">T4406.008 Narrative Uses Appeal to Emotion<input type="checkbox" id="T4406.008check"  onclick="handleTechniqueClick('T4406.008')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -758,11 +893,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2046.006">T2046.006 Service Provider To<input type="checkbox" id="T2046.006check"  onclick="handleTechniqueClick('T2046.006')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4008.003">T4008.003 Tag Asset<input type="checkbox" id="T4008.003check"  onclick="handleTechniqueClick('T4008.003')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T4406.009">T4406.009 Narrative Uses Exaggeration<input type="checkbox" id="T4406.009check"  onclick="handleTechniqueClick('T4406.009')"></td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -770,11 +910,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2046.007">T2046.007 Critic Of<input type="checkbox" id="T2046.007check"  onclick="handleTechniqueClick('T2046.007')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4009">T4009 Publication Access Settings<input type="checkbox" id="T4009check"  onclick="handleTechniqueClick('T4009')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -782,11 +927,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2047">T2047 Relationship Validity<input type="checkbox" id="T2047check"  onclick="handleTechniqueClick('T2047')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4009.001">T4009.001 Number of Times Publication can be Viewed Limited per User<input type="checkbox" id="T4009.001check"  onclick="handleTechniqueClick('T4009.001')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -794,11 +944,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2047.001">T2047.001 Relationship is Legitimate<input type="checkbox" id="T2047.001check"  onclick="handleTechniqueClick('T2047.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4009.002">T4009.002 Access to Publication Automatically Removed after Specified Time Expires<input type="checkbox" id="T4009.002check"  onclick="handleTechniqueClick('T4009.002')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -806,11 +961,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2047.002">T2047.002 Relationship is Not Legitimate<input type="checkbox" id="T2047.002check"  onclick="handleTechniqueClick('T2047.002')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4009.003">T4009.003 Ability to View Publication Restricted to Specified Audience within Platform<input type="checkbox" id="T4009.003check"  onclick="handleTechniqueClick('T4009.003')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -818,11 +978,16 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2045">T2045 Asset Uses Automation<input type="checkbox" id="T2045check"  onclick="handleTechniqueClick('T2045')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4009.004">T4009.004 Ability to Comment on Publication Restricted to Specified Audience within Platform<input type="checkbox" id="T4009.004check"  onclick="handleTechniqueClick('T4009.004')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -830,11 +995,33 @@ function handleTechniqueClick(box) {
 <tr>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
+<td id="T2045.001">T2045.001 Asset Uses and Discloses Automation<input type="checkbox" id="T2045.001check"  onclick="handleTechniqueClick('T2045.001')"></td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
-<td id="T4009.005">T4009.005 Ability to Comment on Publication Disabled for All Users within Platform<input type="checkbox" id="T4009.005check"  onclick="handleTechniqueClick('T4009.005')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+</tr>
+<tr>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td id="T2045.002">T2045.002 Asset Uses Automation without Disclosure<input type="checkbox" id="T2045.002check"  onclick="handleTechniqueClick('T2045.002')"></td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
+<td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
 <td bgcolor=white> </td>
@@ -846,319 +1033,387 @@ function handleTechniqueClick(box) {
 <ul>
 <li id="T2001text" style="display:none">T2001: User Asset</li>
 <li id="T2021text" style="display:none">T2021: Asset Configuration</li>
-<li id="T2041text" style="display:none">T2041: Asset Presented Identity</li>
+<li id="T2041text" style="display:none">T2041: Presented Identity</li>
+<li id="T2061text" style="display:none">T2061: Individual</li>
 <li id="T2201text" style="display:none">T2201: Publish Online Publication</li>
 <li id="T2221text" style="display:none">T2221: Platform Curation Actions</li>
-<li id="T3001text" style="display:none">T3001: Offline Harm</li>
+<li id="T3001text" style="display:none">T3001: Physical Harm</li>
+<li id="T3800text" style="display:none">T3800: Repeated Action</li>
 <li id="T4001text" style="display:none">T4001: Publication Type</li>
 <li id="T4201text" style="display:none">T4201: AI-Generated Content</li>
-<li id="T4401text" style="display:none">T4401: Content Verifiability</li>
-<li id="T4603text" style="display:none">T4603: Content Action</li>
+<li id="T4006text" style="display:none">T4006: Demonstrably False Content</li>
+<li id="T4602text" style="display:none">T4602: Content Contains Link</li>
+<li id="T4002text" style="display:none">T4002: Content Format</li>
+<li id="T6001text" style="display:none">T6001: Narrative Related to Subject</li>
+<li id="T4801text" style="display:none">T4801: In-Person Interaction</li>
 <li id="T2001.001text" style="display:none">T2001.001: Account Asset</li>
 <li id="T2021.001text" style="display:none">T2021.001: Verified Asset</li>
-<li id="T2041.001text" style="display:none">T2041.001: Asset Presents Anonymous Identity</li>
+<li id="T2041.001text" style="display:none">T2041.001: Anonymous Identity</li>
+<li id="T2061.001text" style="display:none">T2061.001: Multiple Individuals</li>
 <li id="T2201.001text" style="display:none">T2201.001: Publish</li>
 <li id="T2221.001text" style="display:none">T2221.001: Host</li>
-<li id="T3001.001text" style="display:none">T3001.001: Physical Violence</li>
+<li id="T3001.001text" style="display:none">T3001.001: Conduct Physical Violence</li>
+<li id="T3801text" style="display:none">T3801: Lack of Action</li>
 <li id="T4001.001text" style="display:none">T4001.001: Post</li>
 <li id="T4201.001text" style="display:none">T4201.001: Deepfake Impersonation</li>
-<li id="T4401.001text" style="display:none">T4401.001: Information is Verified</li>
-<li id="T4603.001text" style="display:none">T4603.001: Content Threatens Action</li>
+<li id="T4006.001text" style="display:none">T4006.001: Statement Incorrectly Presented as Made by Individual or Institution</li>
+<li id="T4602.001text" style="display:none">T4602.001: Content Contains Disguised Link</li>
+<li id="T4002.001text" style="display:none">T4002.001: Text Content</li>
+<li id="T6001.001text" style="display:none">T6001.001: Narrative Frames Subject as Aligned with Outgroup</li>
+<li id="T4801.001text" style="display:none">T4801.001: Discussion</li>
 <li id="T2001.002text" style="display:none">T2001.002: Admin Account Asset</li>
 <li id="T2021.002text" style="display:none">T2021.002: Lookalike Asset ID</li>
-<li id="T2041.002text" style="display:none">T2041.002: Asset Presents Legitimate Identity of Asset Operator</li>
+<li id="T2041.002text" style="display:none">T2041.002: Legitimate Identity</li>
+<li id="T2062text" style="display:none">T2062: Institution</li>
 <li id="T2201.002text" style="display:none">T2201.002: Send</li>
 <li id="T2221.002text" style="display:none">T2221.002: Promote</li>
-<li id="T3001.002text" style="display:none">T3001.002: Physical Sexual Violence</li>
+<li id="T3001.002text" style="display:none">T3001.002: Conduct Physical Sexual Violence</li>
+<li id="T3801.001text" style="display:none">T3801.001: Cease Ongoing Action</li>
 <li id="T4001.002text" style="display:none">T4001.002: Message</li>
 <li id="T4201.002text" style="display:none">T4201.002: Sexual Deepfake Impersonation</li>
-<li id="T4401.002text" style="display:none">T4401.002: Information is False</li>
-<li id="T4603.002text" style="display:none">T4603.002: Content Encourages Action</li>
+<li id="T4006.002text" style="display:none">T4006.002: Falsified Depiction of Content Amplification</li>
+<li id="T4602.002text" style="display:none">T4602.002: Content Contains Shortened Link</li>
+<li id="T4002.002text" style="display:none">T4002.002: Templated Text</li>
+<li id="T6001.002text" style="display:none">T6001.002: Narrative Frames Subject as taking Taboo Action</li>
 <li id="T2001.003text" style="display:none">T2001.003: Unauthenticated Account Asset</li>
 <li id="T2021.003text" style="display:none">T2021.003: Lookalike Domain</li>
-<li id="T2041.003text" style="display:none">T2041.003: Asset Presents Nonexistent Identity</li>
+<li id="T2041.003text" style="display:none">T2041.003: Nonexistent Identity</li>
+<li id="T2062.001text" style="display:none">T2062.001: Multiple Institutions</li>
 <li id="T2201.003text" style="display:none">T2201.003: Conduct</li>
 <li id="T2221.003text" style="display:none">T2221.003: Deliver</li>
+<li id="T3001.003text" style="display:none">T3001.003: Attempt Suicide</li>
+<li id="T3801.002text" style="display:none">T3801.002: Not Taking Action</li>
 <li id="T4001.003text" style="display:none">T4001.003: Email</li>
 <li id="T4201.003text" style="display:none">T4201.003: AI-Nudified Imagery</li>
-<li id="T4401.003text" style="display:none">T4401.003: Information is Unverifiable</li>
-<li id="T4603.003text" style="display:none">T4603.003: Content Contains Instructions for Action</li>
+<li id="T4006.003text" style="display:none">T4006.003: Falsified Graffiti or Signage</li>
+<li id="T4602.003text" style="display:none">T4602.003: Content Contains QR Code Link</li>
+<li id="T4002.003text" style="display:none">T4002.003: Image Content</li>
+<li id="T6001.003text" style="display:none">T6001.003: Narrative Frames Subject as Irrational on Given Issue</li>
 <li id="T2002text" style="display:none">T2002: Community Asset</li>
 <li id="T2022text" style="display:none">T2022: Asset Description</li>
-<li id="T2041.004text" style="display:none">T2041.004: Asset Presents Impersonation of Another Identity</li>
+<li id="T2041.004text" style="display:none">T2041.004: Impersonation of Another Identity</li>
 <li id="T2201.004text" style="display:none">T2201.004: Upload</li>
 <li id="T2222text" style="display:none">T2222: Platform Prompting Action</li>
+<li id="T3002text" style="display:none">T3002: Physically Interact</li>
+<li id="T3802text" style="display:none">T3802: Action Legality</li>
 <li id="T4001.004text" style="display:none">T4001.004: Call</li>
 <li id="T4202text" style="display:none">T4202: Private Materials</li>
-<li id="T4401.004text" style="display:none">T4401.004: Information is Misleading</li>
-<li id="T4603.004text" style="display:none">T4603.004: Content Solicits Action</li>
+<li id="T4006.004text" style="display:none">T4006.004: Imagery Depicting Individual Edited to Introduce Sexual Material</li>
+<li id="T4602.004text" style="display:none">T4602.004: Content Contains Embedded Link</li>
+<li id="T4002.004text" style="display:none">T4002.004: Evidence Collage</li>
 <li id="T2002.001text" style="display:none">T2002.001: Online Community Group</li>
 <li id="T2023text" style="display:none">T2023: Asset Imagery</li>
-<li id="T2041.005text" style="display:none">T2041.005: Asset Presents Parody of Another Identity</li>
+<li id="T2041.005text" style="display:none">T2041.005: Parody of Another Identity</li>
 <li id="T2201.005text" style="display:none">T2201.005: Comment</li>
 <li id="T2222.001text" style="display:none">T2222.001: Suggest Action</li>
+<li id="T3002.001text" style="display:none">T3002.001: Physically Detain</li>
+<li id="T3802.001text" style="display:none">T3802.001: Action Illegal in Actor's Jurisdiction</li>
 <li id="T4001.005text" style="display:none">T4001.005: Stream</li>
 <li id="T4202.001text" style="display:none">T4202.001: Personally Identifiable Information</li>
-<li id="T4401.005text" style="display:none">T4401.005: Content Produced as Satire</li>
-<li id="T4603.005text" style="display:none">T4603.005: Content Depicts Offline Harm</li>
+<li id="T4006.005text" style="display:none">T4006.005: Claim to Nonexistent Physical Address</li>
+<li id="T4603text" style="display:none">T4603: Content Action</li>
+<li id="T4002.005text" style="display:none">T4002.005: Text Presented in Image Format</li>
 <li id="T2002.002text" style="display:none">T2002.002: Online Community Page</li>
 <li id="T2023.001text" style="display:none">T2023.001: Copied Asset Imagery</li>
-<li id="T2041.006text" style="display:none">T2041.006: Asset's Previous Identity Maintained after Acquisition</li>
+<li id="T2041.006text" style="display:none">T2041.006: Asset's Existing Identity Maintained after Change of Operator</li>
 <li id="T2201.006text" style="display:none">T2201.006: Submit</li>
 <li id="T2222.002text" style="display:none">T2222.002: Enable Action</li>
+<li id="T3002.002text" style="display:none">T3002.002: Physically Surveil</li>
+<li id="T3802.002text" style="display:none">T3802.002: Action Illegal in Technical Infrastructure's Jurisdiction</li>
 <li id="T4001.006text" style="display:none">T4001.006: File</li>
 <li id="T4202.002text" style="display:none">T4202.002: Private Intimate Imagery</li>
-<li id="T4401.006text" style="display:none">T4401.006: Content Previously Fact Checked</li>
-<li id="T4604text" style="display:none">T4604: Harmful Content</li>
+<li id="T4006.006text" style="display:none">T4006.006: Incorrect Claim to Real Physical Address</li>
+<li id="T4603.001text" style="display:none">T4603.001: Content Threatens Action</li>
+<li id="T4002.006text" style="display:none">T4002.006: Video Content</li>
 <li id="T2002.003text" style="display:none">T2002.003: Chat Community Server</li>
 <li id="T2023.002text" style="display:none">T2023.002: Mimicked Asset Imagery</li>
 <li id="T2041.007text" style="display:none">T2041.007: Asset Presents New Identity</li>
 <li id="T2202text" style="display:none">T2202: Amplify Online Publication</li>
 <li id="T2223text" style="display:none">T2223: Platform Takes Moderation Action</li>
+<li id="T3002.003text" style="display:none">T3002.003: Physically Abduct</li>
+<li id="T3802.003text" style="display:none">T3802.003: Action Illegal in Subject's Jurisdiction</li>
 <li id="T4001.007text" style="display:none">T4001.007: Report of Infraction</li>
 <li id="T4202.003text" style="display:none">T4202.003: Internal Communications</li>
-<li id="T4401.007text" style="display:none">T4401.007: Claim Previously Fact Checked</li>
-<li id="T4604.001text" style="display:none">T4604.001: Content Constitutes Unsolicited Sexual Imagery</li>
+<li id="T4006.007text" style="display:none">T4006.007: Mislabeled Publication</li>
+<li id="T4603.002text" style="display:none">T4603.002: Content Encourages Action</li>
+<li id="T4002.007text" style="display:none">T4002.007: Vertical Video</li>
 <li id="T2002.004text" style="display:none">T2002.004: Chat Room</li>
 <li id="T2023.003text" style="display:none">T2023.003: Animal Profile Picture</li>
 <li id="T2042text" style="display:none">T2042: Individual Role</li>
 <li id="T2202.001text" style="display:none">T2202.001: Repost</li>
 <li id="T2223.001text" style="display:none">T2223.001: Platform Suppresses Algorithmic Reach</li>
+<li id="T3004text" style="display:none">T3004: Attend Location</li>
 <li id="T4001.008text" style="display:none">T4001.008: Search</li>
 <li id="T4202.004text" style="display:none">T4202.004: Internal Document</li>
-<li id="T4402text" style="display:none">T4402: Reframe Context</li>
-<li id="T4604.002text" style="display:none">T4604.002: Content Constitutes Unsolicited Request for Sexual Imagery</li>
+<li id="T4006.008text" style="display:none">T4006.008: Action Incorrectly Presented as Taken by Individual or Institution</li>
+<li id="T4603.003text" style="display:none">T4603.003: Content Contains Instructions for Action</li>
+<li id="T4002.008text" style="display:none">T4002.008: Horizontal Video</li>
 <li id="T2002.005text" style="display:none">T2002.005: Chat Broadcast Group</li>
 <li id="T2023.004text" style="display:none">T2023.004: Scenery Profile Picture</li>
 <li id="T2042.001text" style="display:none">T2042.001: Local Individual Role</li>
 <li id="T2202.002text" style="display:none">T2202.002: Emote React</li>
 <li id="T2223.002text" style="display:none">T2223.002: Platform Suppresses Search Results</li>
+<li id="T3004.001text" style="display:none">T3004.001: Visit</li>
 <li id="T4001.009text" style="display:none">T4001.009: Search Results</li>
 <li id="T4202.005text" style="display:none">T4202.005: Internal Contacts List</li>
-<li id="T4402.001text" style="display:none">T4402.001: Incorrect Subtitled Speech Reframes Context</li>
-<li id="T4604.003text" style="display:none">T4604.003: Content Constitutes Voyeuristic Content</li>
+<li id="T4401text" style="display:none">T4401: Content Verifiability</li>
+<li id="T4603.004text" style="display:none">T4603.004: Content Solicits Action</li>
+<li id="T4002.009text" style="display:none">T4002.009: Subtitled Speech</li>
 <li id="T2002.006text" style="display:none">T2002.006: Community Sub-Forum</li>
 <li id="T2023.005text" style="display:none">T2023.005: Illustrated Character Profile Picture</li>
 <li id="T2042.002text" style="display:none">T2042.002: Journalist Role</li>
 <li id="T2202.003text" style="display:none">T2202.003: Forward</li>
 <li id="T2223.003text" style="display:none">T2223.003: Platform Removes Publication from Platform</li>
+<li id="T3004.002text" style="display:none">T3004.002: Physically Protest</li>
 <li id="T4001.010text" style="display:none">T4001.010: Advertisement</li>
 <li id="T4202.006text" style="display:none">T4202.006: Asset Login Credentials</li>
-<li id="T4402.002text" style="display:none">T4402.002: Edits Made to News Report which Reframe Context</li>
-<li id="T4604.004text" style="display:none">T4604.004: Content Constitutes CSAM</li>
+<li id="T4401.001text" style="display:none">T4401.001: Information is Verified</li>
+<li id="T4603.005text" style="display:none">T4603.005: Content Depicts Physical Harm</li>
+<li id="T4002.010text" style="display:none">T4002.010: Audio Content</li>
 <li id="T2002.007text" style="display:none">T2002.007: Online Game Session</li>
 <li id="T2023.006text" style="display:none">T2023.006: Attractive Person Profile Picture</li>
 <li id="T2042.003text" style="display:none">T2042.003: Activist Role</li>
 <li id="T2203text" style="display:none">T2203: Interact with Community or User</li>
 <li id="T2223.004text" style="display:none">T2223.004: Platform Applies Disclaimer</li>
-<li id="T4002text" style="display:none">T4002: Content Format</li>
-<li id="T4203text" style="display:none">T4203: Edited Content</li>
-<li id="T4402.003text" style="display:none">T4402.003: Historic Content Incorrectly Presented as Current</li>
-<li id="T4604.005text" style="display:none">T4604.005: Content Constitutes Sextortion</li>
+<li id="T3005text" style="display:none">T3005: Financial Action</li>
+<li id="T4008text" style="display:none">T4008: Use of Tagging Feature</li>
+<li id="T4202.007text" style="display:none">T4202.007: Content Constitutes Leak of Private Material</li>
+<li id="T4401.002text" style="display:none">T4401.002: Information is False</li>
+<li id="T4603.006text" style="display:none">T4603.006: Content Solicits Secrecy</li>
+<li id="T4002.011text" style="display:none">T4002.011: Music</li>
 <li id="T2003text" style="display:none">T2003: Community Hosting Platform</li>
 <li id="T2024text" style="display:none">T2024: Platform Capability</li>
 <li id="T2042.004text" style="display:none">T2042.004: Hacktivist Role</li>
 <li id="T2203.001text" style="display:none">T2203.001: Request Connection with Asset</li>
 <li id="T2223.005text" style="display:none">T2223.005: Platform Suspends Asset</li>
-<li id="T4002.001text" style="display:none">T4002.001: Text Content</li>
-<li id="T4203.001text" style="display:none">T4203.001: Clipped Content</li>
-<li id="T4402.004text" style="display:none">T4402.004: Content Incorrectly Presented as Depicting Another Location</li>
-<li id="T4604.006text" style="display:none">T4604.006: Content Constitutes Abusive Content</li>
+<li id="T3005.001text" style="display:none">T3005.001: Fund</li>
+<li id="T4008.001text" style="display:none">T4008.001: Geolocation</li>
+<li id="T4203text" style="display:none">T4203: Edited Content</li>
+<li id="T4401.003text" style="display:none">T4401.003: Information is Unverifiable</li>
+<li id="T4603.007text" style="display:none">T4603.007: Content Solicits Information</li>
+<li id="T4003text" style="display:none">T4003: Content Style</li>
 <li id="T2003.001text" style="display:none">T2003.001: Social Media Platform</li>
 <li id="T2024.001text" style="display:none">T2024.001: Payment Processing Capability</li>
 <li id="T2042.005text" style="display:none">T2042.005: Military Personnel Role</li>
 <li id="T2203.002text" style="display:none">T2203.002: Connect with Asset</li>
 <li id="T2224text" style="display:none">T2224: Platform Failure to Take Action</li>
-<li id="T4002.002text" style="display:none">T4002.002: Templated Text</li>
-<li id="T4203.002text" style="display:none">T4203.002: Cropped Content</li>
-<li id="T4402.005text" style="display:none">T4402.005: Video Game Content Incorrectly Presented as Depicting Reality</li>
-<li id="T4604.007text" style="display:none">T4604.007: Content Constitutes Discriminatory Content</li>
+<li id="T4008.002text" style="display:none">T4008.002: Hashtag</li>
+<li id="T4203.001text" style="display:none">T4203.001: Clipped Content</li>
+<li id="T4401.004text" style="display:none">T4401.004: Information is Misleading</li>
+<li id="T4603.008text" style="display:none">T4603.008: Content Describes Activity</li>
+<li id="T4003.001text" style="display:none">T4003.001: News Report</li>
 <li id="T2003.002text" style="display:none">T2003.002: Chat Platform</li>
 <li id="T2024.002text" style="display:none">T2024.002: Subscription Processing Capability</li>
 <li id="T2042.006text" style="display:none">T2042.006: Recruiter Role</li>
 <li id="T2203.003text" style="display:none">T2203.003: Follow Asset</li>
 <li id="T2224.001text" style="display:none">T2224.001: Platform Fails to Address Asset with Repeat Infringements</li>
-<li id="T4002.003text" style="display:none">T4002.003: Image Content</li>
-<li id="T4203.003text" style="display:none">T4203.003: Playback Speed Altered</li>
-<li id="T4402.006text" style="display:none">T4402.006: AI-Generated Content Incorrectly Presented as Depicting Reality</li>
-<li id="T4604.008text" style="display:none">T4604.008: Content Constitutes Intersectional Discriminatory Content</li>
+<li id="T4009text" style="display:none">T4009: Publication Access Settings</li>
+<li id="T4203.002text" style="display:none">T4203.002: Cropped Content</li>
+<li id="T4401.005text" style="display:none">T4401.005: Content Produced as Satire</li>
+<li id="T4603.009text" style="display:none">T4603.009: Explicit Content Action</li>
+<li id="T4003.002text" style="display:none">T4003.002: Opinion Piece</li>
 <li id="T2003.003text" style="display:none">T2003.003: Microblogging Platform</li>
 <li id="T2024.003text" style="display:none">T2024.003: Email Service Capability</li>
 <li id="T2042.007text" style="display:none">T2042.007: Researcher Role</li>
 <li id="T2203.004text" style="display:none">T2203.004: Join Community</li>
 <li id="T2224.002text" style="display:none">T2224.002: Platform Fails to Reverse Erroneous Moderation Action</li>
-<li id="T4002.004text" style="display:none">T4002.004: Evidence Collage</li>
-<li id="T4203.004text" style="display:none">T4203.004: Source Removed from Content</li>
-<li id="T4402.007text" style="display:none">T4402.007: Context Reframed by Edits to Media</li>
-<li id="T4604.009text" style="display:none">T4604.009: Content Constitutes Eating Disorder Content</li>
+<li id="T4009.001text" style="display:none">T4009.001: Number of Times Publication can be Viewed Limited per User</li>
+<li id="T4203.003text" style="display:none">T4203.003: Playback Speed Altered</li>
+<li id="T4401.006text" style="display:none">T4401.006: Content Previously Fact Checked</li>
+<li id="T4603.010text" style="display:none">T4603.010: Implicit Content Action</li>
+<li id="T4003.003text" style="display:none">T4003.003: Academic Research Report</li>
 <li id="T2003.004text" style="display:none">T2003.004: Legacy Online Forum Platform</li>
 <li id="T2024.004text" style="display:none">T2024.004: Encrypted Communication Capability</li>
 <li id="T2042.008text" style="display:none">T2042.008: Expert Role</li>
 <li id="T2203.005text" style="display:none">T2203.005: Add Asset to Community</li>
 <li id="T2224.003text" style="display:none">T2224.003: Platform Fails to Act on Report in Timely Manner</li>
-<li id="T4002.005text" style="display:none">T4002.005: Text Presented in Image Format</li>
-<li id="T4203.005text" style="display:none">T4203.005: AI-Edited Content</li>
-<li id="T4402.008text" style="display:none">T4402.008: Statement Reframed by Removal from Context</li>
+<li id="T4009.002text" style="display:none">T4009.002: Access to Publication Automatically Removed after Specified Time Expires</li>
+<li id="T4203.004text" style="display:none">T4203.004: Source Removed from Content</li>
+<li id="T4401.007text" style="display:none">T4401.007: Claim Previously Fact Checked</li>
+<li id="T4604text" style="display:none">T4604: Harmful Content</li>
+<li id="T4003.004text" style="display:none">T4003.004: Fact Check</li>
 <li id="T2003.005text" style="display:none">T2003.005: Community Forum Platform</li>
 <li id="T2025text" style="display:none">T2025: Asset Gating</li>
 <li id="T2042.009text" style="display:none">T2042.009: Romantic Suitor Role</li>
 <li id="T2203.006text" style="display:none">T2203.006: Block Asset</li>
 <li id="T2224.004text" style="display:none">T2224.004: Platform Denies Infringement is Infringing</li>
-<li id="T4002.006text" style="display:none">T4002.006: Video Content</li>
-<li id="T4402.009text" style="display:none">T4402.009: Entertainment Media Content Incorrectly Presented as Depicting Reality</li>
+<li id="T4009.003text" style="display:none">T4009.003: Ability to View Publication Restricted to Specified Audience within Platform</li>
+<li id="T4203.005text" style="display:none">T4203.005: AI-Edited Content</li>
+<li id="T4402text" style="display:none">T4402: Reframe Context</li>
+<li id="T4604.001text" style="display:none">T4604.001: Content Constitutes Unsolicited Sexual Imagery</li>
+<li id="T4003.005text" style="display:none">T4003.005: Impersonated Content</li>
 <li id="T2003.006text" style="display:none">T2003.006: Image Board Platform</li>
 <li id="T2025.001text" style="display:none">T2025.001: Gated Asset</li>
 <li id="T2042.010text" style="display:none">T2042.010: Party Official Role</li>
-<li id="T2204text" style="display:none">T2204: Acquire Content</li>
+<li id="T2203.007text" style="display:none">T2203.007: Unfollow Asset</li>
 <li id="T2225text" style="display:none">T2225: Issue with Platform Moderation Action</li>
-<li id="T4002.007text" style="display:none">T4002.007: Vertical Video</li>
-<li id="T4402.010text" style="display:none">T4402.010: Content Originally Produced as Satire Presented as Not Satire</li>
+<li id="T4009.004text" style="display:none">T4009.004: Ability to Comment on Publication Restricted to Specified Audience within Platform</li>
+<li id="T4407text" style="display:none">T4407: Content Sourcing Details</li>
+<li id="T4402.001text" style="display:none">T4402.001: Incorrect Subtitled Speech Reframes Context</li>
+<li id="T4604.002text" style="display:none">T4604.002: Content Constitutes Unsolicited Request for Sexual Imagery</li>
+<li id="T4003.006text" style="display:none">T4003.006: Document</li>
 <li id="T2003.007text" style="display:none">T2003.007: Question and Answer Platform</li>
 <li id="T2025.002text" style="display:none">T2025.002: Invite Gated Asset</li>
 <li id="T2042.011text" style="display:none">T2042.011: Government Official Role</li>
-<li id="T2204.001text" style="display:none">T2204.001: Produce</li>
+<li id="T2203.008text" style="display:none">T2203.008: Leave Community</li>
 <li id="T2225.001text" style="display:none">T2225.001: Platform Fails to Provide Clear Reason for Moderation Decision</li>
-<li id="T4002.008text" style="display:none">T4002.008: Horizontal Video</li>
-<li id="T4403text" style="display:none">T4403: Issues with Cited Academic Research</li>
+<li id="T4009.005text" style="display:none">T4009.005: Ability to Comment on Publication Disabled for All Users within Platform</li>
+<li id="T4407.001text" style="display:none">T4407.001: Incorrect Content Source Presented</li>
+<li id="T4402.002text" style="display:none">T4402.002: Edits Made to News Report which Reframe Context</li>
+<li id="T4604.003text" style="display:none">T4604.003: Content Constitutes Voyeuristic Content</li>
+<li id="T4003.007text" style="display:none">T4003.007: Book</li>
 <li id="T2003.008text" style="display:none">T2003.008: Online Game Platform</li>
 <li id="T2025.003text" style="display:none">T2025.003: Approval Gated Asset</li>
-<li id="T2042.012text" style="display:none">T2042.012: Government Employee Role</li>
+<li id="T2042.013text" style="display:none">T2042.013: Law Enforcement Officer Role</li>
+<li id="T2203.009text" style="display:none">T2203.009: End Connection with Asset</li>
 <li id="T2225.002text" style="display:none">T2225.002: Platform Fails to Adequately Communicate Moderation Decision</li>
-<li id="T4002.009text" style="display:none">T4002.009: Subtitled Speech</li>
-<li id="T4403.001text" style="display:none">T4403.001: Narrative Cites Nonexistent Academic Research</li>
+<li id="T4407.002text" style="display:none">T4407.002: Content Presented as Produced by Third Party</li>
+<li id="T4402.003text" style="display:none">T4402.003: Historic Content Incorrectly Presented as Current</li>
+<li id="T4604.004text" style="display:none">T4604.004: Content Constitutes CSAM</li>
+<li id="T4003.008text" style="display:none">T4003.008: Podcast Episode</li>
 <li id="T2003.009text" style="display:none">T2003.009: Dating Platform</li>
 <li id="T2025.004text" style="display:none">T2025.004: Geoblocked Asset</li>
-<li id="T2042.013text" style="display:none">T2042.013: Law Enforcement Officer Role</li>
+<li id="T2042.014text" style="display:none">T2042.014: Sex Worker Role</li>
+<li id="T2204text" style="display:none">T2204: Obtain Material</li>
 <li id="T2225.003text" style="display:none">T2225.003: Platform Fails to Disclose Use of Automation in Moderation Decision</li>
-<li id="T4002.010text" style="display:none">T4002.010: Audio Content</li>
-<li id="T4403.002text" style="display:none">T4403.002: Narrative Misrepresents Findings of Cited Academic Research</li>
+<li id="T4407.003text" style="display:none">T4407.003: Content Presented as Produced by Actor</li>
+<li id="T4402.004text" style="display:none">T4402.004: Content Incorrectly Presented as Depicting Another Location</li>
+<li id="T4604.005text" style="display:none">T4604.005: Content Constitutes Sextortion</li>
+<li id="T4003.009text" style="display:none">T4003.009: Job Posting</li>
 <li id="T2004text" style="display:none">T2004: Content Hosting Platform</li>
 <li id="T2025.005text" style="display:none">T2025.005: Paid Access Asset</li>
-<li id="T2042.014text" style="display:none">T2042.014: Sex Worker Role</li>
+<li id="T2042.015text" style="display:none">T2042.015: Dissident Role</li>
+<li id="T2204.001text" style="display:none">T2204.001: Produce</li>
 <li id="T2225.004text" style="display:none">T2225.004: Platform Fails to Provide Method to Challenge Moderation Decision</li>
-<li id="T4002.011text" style="display:none">T4002.011: Music</li>
-<li id="T4403.003text" style="display:none">T4403.003: Narrative Cites Retracted Academic Research</li>
+<li id="T4407.004text" style="display:none">T4407.004: Source Embedded in Media</li>
+<li id="T4402.005text" style="display:none">T4402.005: Video Game Content Incorrectly Presented as Depicting Reality</li>
+<li id="T4604.006text" style="display:none">T4604.006: Content Constitutes Abusive Content</li>
+<li id="T4003.010text" style="display:none">T4003.010: Secret Recording</li>
 <li id="T2004.001text" style="display:none">T2004.001: Website Asset</li>
 <li id="T2025.006text" style="display:none">T2025.006: Subscription Access Asset</li>
-<li id="T2043text" style="display:none">T2043: Institutional Role</li>
+<li id="T2042.016text" style="display:none">T2042.016: Student Role</li>
+<li id="T2204.002text" style="display:none">T2204.002: Give Material</li>
 <li id="T2225.005text" style="display:none">T2225.005: Platform Fails to Meet Legal Standards for Method to Challenge Moderation Decision</li>
-<li id="T4003text" style="display:none">T4003: Content Style</li>
-<li id="T4403.004text" style="display:none">T4403.004: Narrative Cites Academic Research not Peer Reviewed</li>
+<li id="T4407.005text" style="display:none">T4407.005: Anonymised Content</li>
+<li id="T4402.006text" style="display:none">T4402.006: AI-Generated Content Incorrectly Presented as Depicting Reality</li>
+<li id="T4604.007text" style="display:none">T4604.007: Content Constitutes Discriminatory Content</li>
+<li id="T4003.011text" style="display:none">T4003.011: Screen Capture</li>
 <li id="T2004.002text" style="display:none">T2004.002: Paste Platform</li>
 <li id="T2026text" style="display:none">T2026: Asset Acquisition</li>
-<li id="T2043.001text" style="display:none">T2043.001: Local Institution Role</li>
-<li id="T4003.001text" style="display:none">T4003.001: News Report</li>
-<li id="T4404text" style="display:none">T4404: Issues with Presented Statistical Evidence</li>
+<li id="T2042.017text" style="display:none">T2042.017: State Authority Role</li>
+<li id="T2205text" style="display:none">T2205: Obtain Asset</li>
+<li id="T4402.007text" style="display:none">T4402.007: Context Reframed by Edits to Media</li>
+<li id="T4604.008text" style="display:none">T4604.008: Content Constitutes Intersectional Discriminatory Content</li>
+<li id="T4003.012text" style="display:none">T4003.012: Meme</li>
 <li id="T2004.003text" style="display:none">T2004.003: Video Platform</li>
 <li id="T2026.001text" style="display:none">T2026.001: Newly Created Asset</li>
-<li id="T2043.002text" style="display:none">T2043.002: News Outlet Role</li>
-<li id="T4003.002text" style="display:none">T4003.002: Opinion Piece</li>
-<li id="T4404.001text" style="display:none">T4404.001: Narrative Presents Fabricated Statistics as Genuine Data</li>
+<li id="T2042.018text" style="display:none">T2042.018: Male Role</li>
+<li id="T2206text" style="display:none">T2206: Manage Own Publication or Asset</li>
+<li id="T4402.008text" style="display:none">T4402.008: Statement Reframed by Removal from Context</li>
+<li id="T4604.009text" style="display:none">T4604.009: Content Constitutes Eating Disorder Content</li>
+<li id="T4003.013text" style="display:none">T4003.013: Stock Content</li>
 <li id="T2004.004text" style="display:none">T2004.004: Audio Platform</li>
 <li id="T2026.002text" style="display:none">T2026.002: Pre-Existing Asset</li>
-<li id="T2043.003text" style="display:none">T2043.003: Fact Checking Organisation Role</li>
-<li id="T4003.003text" style="display:none">T4003.003: Academic Research Report</li>
-<li id="T4404.002text" style="display:none">T4404.002: Narrative Uses Selective Statistics to Support Claim</li>
+<li id="T2042.019text" style="display:none">T2042.019: Female Role</li>
+<li id="T2206.001text" style="display:none">T2206.001: Delete Own Publication</li>
+<li id="T4402.009text" style="display:none">T4402.009: Entertainment Media Content Incorrectly Presented as Depicting Reality</li>
+<li id="T4005text" style="display:none">T4005: Language Details</li>
 <li id="T2004.005text" style="display:none">T2004.005: Live Streaming Platform</li>
 <li id="T2026.003text" style="display:none">T2026.003: Asset Activated after Period of Dormancy</li>
-<li id="T2043.004text" style="display:none">T2043.004: Think Tank Role</li>
-<li id="T4003.004text" style="display:none">T4003.004: Fact Check</li>
-<li id="T4404.003text" style="display:none">T4404.003: Narrative Uses Misinterpreted Statistics to Support Claim</li>
+<li id="T2042.020text" style="display:none">T2042.020: Non-binary Role</li>
+<li id="T2206.002text" style="display:none">T2206.002: Edit Own Publication</li>
+<li id="T4402.010text" style="display:none">T4402.010: Content Originally Produced as Satire Presented as Not Satire</li>
+<li id="T4005.001text" style="display:none">T4005.001: Translated Content</li>
 <li id="T2004.006text" style="display:none">T2004.006: Software Delivery Platform</li>
 <li id="T2026.004text" style="display:none">T2026.004: Freely Created Asset</li>
-<li id="T2043.005text" style="display:none">T2043.005: Business Role</li>
-<li id="T4003.005text" style="display:none">T4003.005: Impersonated Content</li>
-<li id="T4404.004text" style="display:none">T4404.004: Narrative Uses Misleading Data Visualisation</li>
+<li id="T2043text" style="display:none">T2043: Institutional Role</li>
+<li id="T2206.003text" style="display:none">T2206.003: Delete Own Asset</li>
+<li id="T4403text" style="display:none">T4403: Issues with Cited Academic Research</li>
+<li id="T4005.002text" style="display:none">T4005.002: Non-Native Language Error</li>
 <li id="T2004.007text" style="display:none">T2004.007: File Hosting Platform</li>
 <li id="T2026.005text" style="display:none">T2026.005: Paid Created Asset</li>
-<li id="T2043.006text" style="display:none">T2043.006: Government Institution Role</li>
-<li id="T4003.006text" style="display:none">T4003.006: Document</li>
-<li id="T4405text" style="display:none">T4405: Issue with Content's Headline</li>
+<li id="T2043.001text" style="display:none">T2043.001: Local Institution Role</li>
+<li id="T4403.001text" style="display:none">T4403.001: Narrative Cites Nonexistent Academic Research</li>
+<li id="T4005.003text" style="display:none">T4005.003: Coded Terminology</li>
 <li id="T2004.008text" style="display:none">T2004.008: Wiki Platform</li>
 <li id="T2026.006text" style="display:none">T2026.006: Bulk Created Asset</li>
-<li id="T2043.007text" style="display:none">T2043.007: NGO Role</li>
-<li id="T4003.007text" style="display:none">T4003.007: Book</li>
-<li id="T4405.001text" style="display:none">T4405.001: Content Constitutes Clickbait</li>
+<li id="T2043.002text" style="display:none">T2043.002: News Outlet Role</li>
+<li id="T4403.002text" style="display:none">T4403.002: Narrative Misrepresents Findings of Cited Academic Research</li>
+<li id="T4005.004text" style="display:none">T4005.004: Machine Translated Content</li>
 <li id="T2004.009text" style="display:none">T2004.009: Content Subscription Service Platform</li>
 <li id="T2026.007text" style="display:none">T2026.007: Purchased Existing Asset</li>
-<li id="T2043.008text" style="display:none">T2043.008: Social Cause Role</li>
-<li id="T4003.008text" style="display:none">T4003.008: Podcast Episode</li>
-<li id="T4406text" style="display:none">T4406: Rhetorical Device</li>
+<li id="T2043.003text" style="display:none">T2043.003: Fact Checking Organisation Role</li>
+<li id="T4403.003text" style="display:none">T4403.003: Narrative Cites Retracted Academic Research</li>
+<li id="T4007text" style="display:none">T4007: Content Relationship to Platform Policy</li>
 <li id="T2004.010text" style="display:none">T2004.010: Blog Asset</li>
 <li id="T2026.008text" style="display:none">T2026.008: Rented Existing Asset</li>
-<li id="T2043.009text" style="display:none">T2043.009: Adult Entertainment Outlet Role</li>
-<li id="T4004text" style="display:none">T4004: Content Details</li>
-<li id="T4406.001text" style="display:none">T4406.001: Narrative Ties In to Current Events</li>
+<li id="T2043.004text" style="display:none">T2043.004: Think Tank Role</li>
+<li id="T4403.004text" style="display:none">T4403.004: Narrative Cites Academic Research not Peer Reviewed</li>
+<li id="T4007.001text" style="display:none">T4007.001: Content Goes Against Platform Policy</li>
 <li id="T2005text" style="display:none">T2005: Digital Service Platform</li>
 <li id="T2026.009text" style="display:none">T2026.009: Compromised Existing Asset</li>
-<li id="T2044text" style="display:none">T2044: Asset Role Validity</li>
-<li id="T4004.001text" style="display:none">T4004.001: Content Constitutes Leak of Private Material</li>
-<li id="T4406.002text" style="display:none">T4406.002: Narrative Uses False Cause</li>
-<li id="T2005.001text" style="display:none">T2005.001: Blog Hosting Service Platform</li>
-<li id="T2044.001text" style="display:none">T2044.001: Identity Has Legitimate Claim to Role</li>
-<li id="T4004.002text" style="display:none">T4004.002: Secret Recording</li>
-<li id="T4406.003text" style="display:none">T4406.003: Narrative Uses Whataboutism</li>
-<li id="T2005.002text" style="display:none">T2005.002: Website Hosting Service Platform</li>
-<li id="T2044.002text" style="display:none">T2044.002: Identity Does Not Have Legitimate Claim to Role</li>
-<li id="T4004.003text" style="display:none">T4004.003: Screen Capture</li>
-<li id="T4406.004text" style="display:none">T4406.004: Narrative Uses Cherry Picking</li>
-<li id="T2005.003text" style="display:none">T2005.003: Email Service Platform</li>
-<li id="T2045text" style="display:none">T2045: Use of Automation</li>
-<li id="T4004.004text" style="display:none">T4004.004: Anonymised Content</li>
-<li id="T4406.005text" style="display:none">T4406.005: Narrative Uses Anecdote</li>
-<li id="T2005.004text" style="display:none">T2005.004: Link Shortening Service Platform</li>
-<li id="T2045.001text" style="display:none">T2045.001: Asset Uses and Discloses Automation</li>
-<li id="T4004.005text" style="display:none">T4004.005: Meme</li>
-<li id="T4406.006text" style="display:none">T4406.006: Narrative Uses Strawman</li>
-<li id="T2005.005text" style="display:none">T2005.005: Online Advertising Platform</li>
-<li id="T2045.002text" style="display:none">T2045.002: Asset Uses Automation without Disclosure</li>
-<li id="T4004.006text" style="display:none">T4004.006: Stock Content</li>
-<li id="T4406.007text" style="display:none">T4406.007: Narrative Uses Leading Question</li>
-<li id="T2005.006text" style="display:none">T2005.006: Search Engine Platform</li>
-<li id="T4005text" style="display:none">T4005: Language Details</li>
-<li id="T4406.008text" style="display:none">T4406.008: Narrative Uses Appeal to Emotion</li>
-<li id="T2005.007text" style="display:none">T2005.007: AI LLM Platform</li>
-<li id="T4005.001text" style="display:none">T4005.001: Translated Content</li>
-<li id="T4406.009text" style="display:none">T4406.009: Narrative Uses Exaggeration</li>
-<li id="T2005.008text" style="display:none">T2005.008: AI Media Platform</li>
-<li id="T4005.002text" style="display:none">T4005.002: Non-Native Language Error</li>
-<li id="T4407text" style="display:none">T4407: Content Sourcing Details</li>
-<li id="T4005.003text" style="display:none">T4005.003: Coded Terminology</li>
-<li id="T4407.001text" style="display:none">T4407.001: Incorrect Content Source Presented</li>
-<li id="T4005.004text" style="display:none">T4005.004: Machine Translated Content</li>
-<li id="T4407.002text" style="display:none">T4407.002: Content Presented as Produced by Third Party</li>
-<li id="T4006text" style="display:none">T4006: Demonstrably False Content</li>
-<li id="T4407.003text" style="display:none">T4407.003: Content Presented as Produced by Actor</li>
-<li id="T4006.001text" style="display:none">T4006.001: Statement Incorrectly Presented as Made by Individual or Institution</li>
-<li id="T4407.004text" style="display:none">T4407.004: Source Embedded in Media</li>
-<li id="T4006.002text" style="display:none">T4006.002: Falsified Depiction of Content Amplification</li>
-<li id="T4601text" style="display:none">T4601: Content Algorithmic Optimisation</li>
-<li id="T4006.003text" style="display:none">T4006.003: Falsified Graffiti or Signage</li>
-<li id="T4601.001text" style="display:none">T4601.001: Platform Recommendation Algorithm Optimised Content</li>
-<li id="T4006.004text" style="display:none">T4006.004: Imagery Depicting Individual Edited to Introduce Sexual Material</li>
-<li id="T4601.002text" style="display:none">T4601.002: Search Engine Optimised Content</li>
-<li id="T4006.005text" style="display:none">T4006.005: Claim to Nonexistent Physical Address</li>
-<li id="T4602text" style="display:none">T4602: Content Contains Link</li>
-<li id="T4006.006text" style="display:none">T4006.006: Incorrect Claim to Real Physical Address</li>
-<li id="T4602.001text" style="display:none">T4602.001: Content Contains Disguised Link</li>
-<li id="T4006.007text" style="display:none">T4006.007: Mislabeled Publication</li>
-<li id="T4602.002text" style="display:none">T4602.002: Content Contains Shortened Link</li>
-<li id="T4006.008text" style="display:none">T4006.008: Action Incorrectly Presented as Taken by Individual or Institution</li>
-<li id="T4602.003text" style="display:none">T4602.003: Content Contains QR Code Link</li>
-<li id="T4007text" style="display:none">T4007: Content Relationship to Platform Policy</li>
-<li id="T4602.004text" style="display:none">T4602.004: Content Contains Embedded Link</li>
-<li id="T4007.001text" style="display:none">T4007.001: Content Goes Against Platform Policy</li>
+<li id="T2043.005text" style="display:none">T2043.005: Business Role</li>
+<li id="T4404text" style="display:none">T4404: Issues with Presented Statistical Evidence</li>
 <li id="T4007.002text" style="display:none">T4007.002: Content Within Platform Policy</li>
-<li id="T4008text" style="display:none">T4008: Publication Use of Platform Features</li>
-<li id="T4008.001text" style="display:none">T4008.001: Tag Geolocation</li>
-<li id="T4008.002text" style="display:none">T4008.002: Tag Hashtag</li>
-<li id="T4008.003text" style="display:none">T4008.003: Tag Asset</li>
-<li id="T4009text" style="display:none">T4009: Publication Access Settings</li>
-<li id="T4009.001text" style="display:none">T4009.001: Number of Times Publication can be Viewed Limited per User</li>
-<li id="T4009.002text" style="display:none">T4009.002: Access to Publication Automatically Removed after Specified Time Expires</li>
-<li id="T4009.003text" style="display:none">T4009.003: Ability to View Publication Restricted to Specified Audience within Platform</li>
-<li id="T4009.004text" style="display:none">T4009.004: Ability to Comment on Publication Restricted to Specified Audience within Platform</li>
-<li id="T4009.005text" style="display:none">T4009.005: Ability to Comment on Publication Disabled for All Users within Platform</li>
+<li id="T2005.001text" style="display:none">T2005.001: Blog Hosting Service Platform</li>
+<li id="T2027text" style="display:none">T2027: Asset Positioning in Ecosystem</li>
+<li id="T2043.006text" style="display:none">T2043.006: Government Institution Role</li>
+<li id="T4404.001text" style="display:none">T4404.001: Narrative Presents Fabricated Statistics as Genuine Data</li>
+<li id="T4601text" style="display:none">T4601: Content Algorithmic Optimisation</li>
+<li id="T2005.002text" style="display:none">T2005.002: Website Hosting Service Platform</li>
+<li id="T2027.001text" style="display:none">T2027.001: Asset is Following Asset</li>
+<li id="T2043.007text" style="display:none">T2043.007: NGO Role</li>
+<li id="T4404.002text" style="display:none">T4404.002: Narrative Uses Selective Statistics to Support Claim</li>
+<li id="T4601.001text" style="display:none">T4601.001: Platform Recommendation Algorithm Optimised Content</li>
+<li id="T2005.003text" style="display:none">T2005.003: Email Service Platform</li>
+<li id="T2027.002text" style="display:none">T2027.002: Asset is Connected with Asset</li>
+<li id="T2043.008text" style="display:none">T2043.008: Social Cause Role</li>
+<li id="T4404.003text" style="display:none">T4404.003: Narrative Uses Misinterpreted Statistics to Support Claim</li>
+<li id="T4601.002text" style="display:none">T4601.002: Search Engine Optimised Content</li>
+<li id="T2005.004text" style="display:none">T2005.004: Link Shortening Service Platform</li>
+<li id="T2027.003text" style="display:none">T2027.003: Asset is Part of Community</li>
+<li id="T2043.009text" style="display:none">T2043.009: Adult Entertainment Outlet Role</li>
+<li id="T4404.004text" style="display:none">T4404.004: Narrative Uses Misleading Data Visualisation</li>
+<li id="T2005.005text" style="display:none">T2005.005: Online Advertising Platform</li>
+<li id="T2027.004text" style="display:none">T2027.004: Asset Moderates Community</li>
+<li id="T2043.010text" style="display:none">T2043.010: Bank Role</li>
+<li id="T4405text" style="display:none">T4405: Issue with Content's Headline</li>
+<li id="T2005.006text" style="display:none">T2005.006: Search Engine Platform</li>
+<li id="T2027.005text" style="display:none">T2027.005: Asset Exists on Platform</li>
+<li id="T2043.011text" style="display:none">T2043.011: University Role</li>
+<li id="T4405.001text" style="display:none">T4405.001: Content Constitutes Clickbait</li>
+<li id="T2005.007text" style="display:none">T2005.007: AI LLM Platform</li>
+<li id="T2044text" style="display:none">T2044: Role Validity</li>
+<li id="T4406text" style="display:none">T4406: Rhetorical Device</li>
+<li id="T2005.008text" style="display:none">T2005.008: AI Media Platform</li>
+<li id="T2044.001text" style="display:none">T2044.001: Identity Has Legitimate Claim to Role</li>
+<li id="T4406.001text" style="display:none">T4406.001: Narrative Ties In to Current Events</li>
+<li id="T2005.009text" style="display:none">T2005.009: Financial Service Platform</li>
+<li id="T2044.002text" style="display:none">T2044.002: Identity Does Not Have Legitimate Claim to Role</li>
+<li id="T4406.002text" style="display:none">T4406.002: Narrative Uses False Cause</li>
+<li id="T2005.010text" style="display:none">T2005.010: Job Platform</li>
+<li id="T2046text" style="display:none">T2046: Relationship Type</li>
+<li id="T4406.003text" style="display:none">T4406.003: Narrative Uses Whataboutism</li>
+<li id="T2006text" style="display:none">T2006: Multiple Assets</li>
+<li id="T2046.001text" style="display:none">T2046.001: Acquainted With</li>
+<li id="T4406.004text" style="display:none">T4406.004: Narrative Uses Cherry Picking</li>
+<li id="T2046.002text" style="display:none">T2046.002: Related To</li>
+<li id="T4406.005text" style="display:none">T4406.005: Narrative Uses Anecdote</li>
+<li id="T2046.003text" style="display:none">T2046.003: Employed By</li>
+<li id="T4406.006text" style="display:none">T4406.006: Narrative Uses Strawman</li>
+<li id="T2046.004text" style="display:none">T2046.004: Employer Of</li>
+<li id="T4406.007text" style="display:none">T4406.007: Narrative Uses Leading Question</li>
+<li id="T2046.005text" style="display:none">T2046.005: Customer Of</li>
+<li id="T4406.008text" style="display:none">T4406.008: Narrative Uses Appeal to Emotion</li>
+<li id="T2046.006text" style="display:none">T2046.006: Service Provider To</li>
+<li id="T4406.009text" style="display:none">T4406.009: Narrative Uses Exaggeration</li>
+<li id="T2046.007text" style="display:none">T2046.007: Critic Of</li>
+<li id="T2047text" style="display:none">T2047: Relationship Validity</li>
+<li id="T2047.001text" style="display:none">T2047.001: Relationship is Legitimate</li>
+<li id="T2047.002text" style="display:none">T2047.002: Relationship is Not Legitimate</li>
+<li id="T2045text" style="display:none">T2045: Asset Uses Automation</li>
+<li id="T2045.001text" style="display:none">T2045.001: Asset Uses and Discloses Automation</li>
+<li id="T2045.002text" style="display:none">T2045.002: Asset Uses Automation without Disclosure</li>
 </ul>
 
 </body>

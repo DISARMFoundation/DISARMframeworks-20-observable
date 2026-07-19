@@ -8,17 +8,17 @@
 </tr>
 <tr>
 <td><a href="phases/P05.md">P05</a></td>
-<td>Assets</td>
+<td>Participant</td>
 <td></td>
 </tr>
 <tr>
 <td><a href="phases/P06.md">P06</a></td>
-<td>Actions</td>
+<td>Action</td>
 <td></td>
 </tr>
 <tr>
 <td><a href="phases/P07.md">P07</a></td>
-<td>Materials</td>
+<td>Material</td>
 <td></td>
 </tr>
 </table>

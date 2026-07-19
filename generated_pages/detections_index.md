@@ -6,7 +6,7 @@
 <th>name</th>
 <th>summary</th>
 <th>metatechnique</th>
-<th>tactic</th>
+<th>category</th>
 <th>responsetype</th>
 </tr>
 </table>

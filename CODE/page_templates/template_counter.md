@@ -8,7 +8,7 @@
 
 * **Resources needed:** {resources_needed}
 
-* **Belongs to tactic stage**: {tactic}
+* **Belongs to category**: {tactic}
 
 {actortypes}
 

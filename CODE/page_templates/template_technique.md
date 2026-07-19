@@ -2,7 +2,7 @@
 
 **Summary**: {summary}
 
-**Tactic**: {tactic}
+**Category**: {tactic}
 
 {associatedtechniques}
 

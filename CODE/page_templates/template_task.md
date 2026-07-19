@@ -2,5 +2,5 @@
 
 * **Summary:** {summary}
 
-* **Belongs to tactic stage:** {tactic}
+* **Belongs to category:** {tactic}
 

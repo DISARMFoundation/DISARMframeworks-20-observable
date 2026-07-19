@@ -2,7 +2,7 @@
 
 * **Summary:** {summary}
 
-* **Belongs to phase:** {phase}
+* **Belongs to group:** {phase}
 
 
 {tasks}

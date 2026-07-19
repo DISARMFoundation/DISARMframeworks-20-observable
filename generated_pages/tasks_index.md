@@ -5,6 +5,6 @@
 <th>disarm_id</th>
 <th>name</th>
 <th>summary</th>
-<th>tactic_id</th>
+<th>category_id</th>
 </tr>
 </table>

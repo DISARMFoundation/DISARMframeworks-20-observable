@@ -1,4 +1,4 @@
-# DISARM Tactic courses of action
+# DISARM Category courses of action
 
 <table border="1">
 <tr>
