@@ -85,6 +85,10 @@ MASTERDATA_DIR = '../DISARM_MASTER_DATA/'
 # Does not rename the underlying spreadsheet columns used for data lookup.
 HEADER_LABELS = {'phase_id': 'group_id', 'tactic_id': 'category_id', 'tactic': 'category'}
 
+# Display-only relabeling for the plural index-page titles (e.g. "DISARM Phases:").
+# Does not rename the underlying folder/link structure, which still uses phases/tactics/techniques.
+INDEX_LABELS = {'phase': 'groups', 'tactic': 'categories', 'technique': 'observations'}
+
 class Disarm:
 
     
@@ -450,7 +454,7 @@ class Disarm:
         return table_string
 
 
-    def write_object_index_to_file(self, objectname, objectcols, dfobject, outfile, headerlabels=None):
+    def write_object_index_to_file(self, objectname, objectcols, dfobject, outfile, headerlabels=None, label=None):
         ''' Write HTML version of incident list to markdown file
 
         Assumes that dfobject has columns named 'disarm_id' and 'name'
@@ -462,7 +466,7 @@ class Disarm:
 
 <table border="1">
 <tr>
-'''.format(objectname.capitalize())
+'''.format((label or objectname).capitalize())
 
         # Create header row
         html += '<th>{}</th>\n'.format('disarm_id')
@@ -545,7 +549,8 @@ class Disarm:
             self.write_object_index_to_file(objecttypeplural, indexrows[objecttype],
                                             metadata[objecttype],
                                             GENERATED_PAGES_DIR + '{}_index.md'.format(objecttypeplural),
-                                            headerlabels=HEADER_LABELS)
+                                            headerlabels=HEADER_LABELS,
+                                            label=INDEX_LABELS.get(objecttype))
 
             # Update or create file for every object with this objecttype type
             template = open('page_templates/template_{}.md'.format(objecttype), 'r', encoding='utf-8').read()

@@ -1,4 +1,4 @@
-# DISARM Phases:
+# DISARM Groups:
 
 <table border="1">
 <tr>

@@ -1,4 +1,4 @@
-# DISARM Techniques:
+# DISARM Observations:
 
 <table border="1">
 <tr>

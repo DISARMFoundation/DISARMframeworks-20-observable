@@ -1,4 +1,4 @@
-# DISARM Tactics:
+# DISARM Categories:
 
 <table border="1">
 <tr>
